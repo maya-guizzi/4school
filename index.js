@@ -20,7 +20,7 @@ mongoose.connect(mongoDbURI)
 
 
 // Connect the Models
-require('./models/Article')
+require('./models')
 
 
 // Connect the routes
