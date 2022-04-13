@@ -6,6 +6,7 @@ const bodyParser = require('body-parser');
 
 // create the app
 const app =  express()
+app.use(express.static('public'))
 
 // enable POST request
 app.use(bodyParser.urlencoded({
