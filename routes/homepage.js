@@ -3,7 +3,7 @@ const express = require('express')
 const mongoose = require('mongoose')
 
 // Get the models
-const Article = mongoose.model('articles')
+const Notes = mongoose.model('notes')
 
 
 // create the routes
