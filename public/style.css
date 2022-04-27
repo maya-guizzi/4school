@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "font1";
+    src: url("font/basic.ttf");
+  }
+
+.h1 {
+    font-family: font1;
+    color: black;
+    font-size: 65px;
+}    

@@ -21,7 +21,13 @@ mongoose.connect(mongoDbURI)
 
 
 // Connect the Models
-require('./models')
+require('./models/Answers')
+require('./models/Comments')
+require('./models/Forum')
+require('./models/Notes')
+require('./models/Questions')
+require('./models/Tags')
+require('./models/User')
 
 
 // Connect the routes
