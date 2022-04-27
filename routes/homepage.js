@@ -4,6 +4,7 @@ const mongoose = require('mongoose')
 
 // Get the models
 const Notes = mongoose.model('notes')
+const Questions = mongoose.model('questions')
 
 
 // create the routes
@@ -13,10 +14,10 @@ const router = express.Router()
 //list of the articles
 router.get('/', async (req,res) => {
   // render the list of articles
-  const articles = await Article.find().lean()
-  console.log(articles)
-  res.render('homepage', {
-    articles:articles
+  const notes = await Notes.find().lean()
+  console.log(notes)
+  res.render('index.ejs', {
+    notes:notes
   })
 })
 
@@ -25,15 +26,6 @@ router.post('/articles/create', async (req,res) => {
   await Article.create(req.body)
   // console.log(req.body)
   res.render('new-article', {})
-})
-
-router.get('/articles/create', (req,res) => {
-  res.render('new-article', {})
-})
-
-
-router.get('/articles/:id', () => {
-  
 })
 
 // export the requests
