@@ -4,7 +4,6 @@ const mongoose = require('mongoose')
 
 // Get the models
 const Notes = mongoose.model('notes')
-const Questions = mongoose.model('questions')
 
 
 // create the routes
@@ -21,12 +20,6 @@ router.get('/', async (req,res) => {
   })
 })
 
-router.post('/articles/create', async (req,res) => {
-  // create  a new document on the database
-  await Article.create(req.body)
-  // console.log(req.body)
-  res.render('new-article', {})
-})
 
 // export the requests
 module.exports = router;
