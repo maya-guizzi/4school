@@ -7,4 +7,4 @@ const tagsSchema = new mongoose.Schema({
 })
 
 
-mongoose.model('tags', notesSchema)
+mongoose.model('tags', tagsSchema)
