@@ -28,7 +28,7 @@ require('./models')
 app.use(require('./routes/frontend'))
 
 
-const frontendRoutes = require('./routes/frontend')
+const frontendRoutes = require('./routes/homepage')
 
 
 app.listen(3000)
