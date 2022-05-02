@@ -5,7 +5,14 @@
 
 .title {
     font-family: font1;
-    color: black;
+    color: #30414A;
     font-size: 65px;
     text-align: center;
 }    
+.bck{
+  background-color: #FFFBFC;
+}
+
+.bck1{
+  background-color: #74ABC9;
+}
