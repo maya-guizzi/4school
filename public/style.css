@@ -1,10 +1,11 @@
 @font-face {
     font-family: "font1";
-    src: url("font/aBigDeal.ttf");
+    src: url("fonts/a_big_deal/aBigDeal.ttf");
   }
 
-.h1 {
+.title {
     font-family: font1;
     color: black;
     font-size: 65px;
+    text-align: center;
 }    
