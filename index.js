@@ -31,7 +31,12 @@ require('./models/User')
 
 
 // Connect the routes
+app.use(require('./routes/auth'))
+app.use(require('./routes/forum'))
 app.use(require('./routes/homepage'))
+app.use(require('./routes/notes'))
+app.use(require('./routes/school'))
+app.use(require('./routes/tags'))
 
 
 const frontendRoutes = require('./routes/homepage')
