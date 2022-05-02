@@ -34,7 +34,6 @@ app.use(require('./routes/auth'))
 app.use(require('./routes/forum'))
 app.use(require('./routes/homepage'))
 app.use(require('./routes/notes'))
-app.use(require('./routes/school'))
 app.use(require('./routes/tags'))
 
 
