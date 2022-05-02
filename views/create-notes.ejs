@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h1>create notes</h1>
-</body>
+  </head>
+  <body>
+    <h1>Add your notes</h1>
+    <a href="/">Homepage</a>
+
+    <form action="/notes/create" method="POST">
+      <label for="">Title</label>
+      <input type="text" name="title" />
+      
+      <label for="avatar">Choose a profile picture:</label>
+      <input type="file" name="image">
+      
+      <label for="">Caption</label>
+      <input type="text" name="caption" />
+
+      
+      <button type="submit">Create</button>
+    </form>
+  </body>
 </html>
