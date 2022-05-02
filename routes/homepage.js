@@ -16,7 +16,7 @@ router.get('/', async (req,res) => {
   // render the list of articles
   const notes = await Notes.find().lean()
   console.log(notes)
-  res.render('homepage.ejs', {
+  res.render('homepage', {
     notes:notes
   })
 })
