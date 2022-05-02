@@ -4,6 +4,7 @@ const mongoose = require('mongoose')
 
 // Get the models
 const Notes = mongoose.model('notes')
+const Forum = mongoose.model('forum')
 
 
 // create the routes
@@ -15,11 +16,10 @@ router.get('/', async (req,res) => {
   // render the list of articles
   const notes = await Notes.find().lean()
   console.log(notes)
-  res.render('index.ejs', {
+  res.render('homepage.ejs', {
     notes:notes
   })
 })
-
 
 // export the requests
 module.exports = router;
