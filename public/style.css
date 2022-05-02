@@ -14,5 +14,16 @@
 }
 
 .bck1{
-  background-color: #74ABC9;
+  
 }
+
+
+  .col-md-2 {
+    background-color: #74ABC9;;
+    }
+   .col-md-4 {
+    background-color: #FFFBFC;
+     }
+  .col-md-6 {
+  background-color: #FFFBFC; 
+  }
