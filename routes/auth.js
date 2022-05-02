@@ -10,7 +10,7 @@ router.get('/login', async (req,res) => {
     // render the list of articles
     const users = await User.find().lean()
   console.log(users)
-    res.render('login.ejs', {
+    res.render('login', {
         users:users
     })
   })
