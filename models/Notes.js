@@ -5,6 +5,7 @@ const notesSchema = new mongoose.Schema({
     title: String,
     image: String,
     caption: String,
+    tags: [String],
     likes: Number,
     comments: String,
 })
