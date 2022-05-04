@@ -29,7 +29,7 @@ require('./models/Questions')
 require('./models/Tags')
 require('./models/User')
 
-// Connect the routes
+// Connect the routesnode inde
 app.use(require('./routes/auth'))
 app.use(require('./routes/forum'))
 app.use(require('./routes/homepage'))
@@ -38,6 +38,6 @@ app.use(require('./routes/tags'))
 
 
 const frontendRoutes = require('./routes/homepage')
-
+ 
 
 app.listen(3000)
