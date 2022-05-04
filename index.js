@@ -35,7 +35,7 @@ app.use(require('./routes/forum'))
 app.use(require('./routes/homepage'))
 app.use(require('./routes/notes'))
 app.use(require('./routes/tags'))
-
+app.use(require(./)
 
 const frontendRoutes = require('./routes/homepage')
  
