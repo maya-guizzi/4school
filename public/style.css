@@ -5,7 +5,7 @@
 
 .title {
     font-family: font1;
-    color: #30414A;
+    color: black;
     font-size: 65px;
     text-align: center;
     margin-top: 20px;
@@ -17,7 +17,7 @@
 .text1{
   font-family: 'Lato', sans-serif;
   size: 20px;
-  color: #30414A;
+  color: black;
 } 
 
 .text{
