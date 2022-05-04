@@ -18,7 +18,7 @@ router.get('/notes', async (req,res) => {
   console.log(notes)
   res.render('notes', {
     notes:notes
-  })
+  }) 
 })
 
 router.post('/notes/create', async (req,res) => {
