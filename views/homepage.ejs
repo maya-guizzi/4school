@@ -35,8 +35,21 @@
          <button type="button" class="btn btn-outline-light px">Light</button>
             <button type="button" class="btn btn-outline-light px">Light</button>
         </div>
+
+        <div class="col-md-6 text1 ">body
+            <% notes.forEach( (notes) => { %>
+                <div>
+                  <h2><%= notes.title %> </h3>
+                  <img src="<%= notes.image %>" alt="">
+                  <h4><%- notes.caption %> </h4>
+                </div>
+              <% }); %>
+        </div>
+        <div class="col-md-2 text">my account
+
         <div class="col-md-6 text1 ">body</div>
         <div class="col-md-2 text">My Account:
+
             <a href="/login">login</a>
         </div>
       </div>
