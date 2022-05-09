@@ -13,12 +13,18 @@
 
 <body class="bck">
 
-    <h1 class="title">4school</h1>
+    <h1 class="title">4school</h1> 
+
+    <% if(user){ %>
+      <h1>Logged in as <%= user.email %></h1>
+   <% } else{ %>
+      <h1>Not logged in</h1>
+    <% } %>
     <marquee behavior="" direction=""  class="title" ></marquee>
     <div class="row">
 
         <div class="col-md-3 text">filters
-          <button type="button" class="btn btn-primary btn-lg px">Large button</button>
+          <button type="button" class="btn btn-primary btn-lg px">large</button>
           <button type="button" class="btn btn-outline-light px">Light</button>
           <button type="button" class="btn btn-outline-light px">Light</button>
          <button type="button" class="btn btn-outline-light px">Light</button>
