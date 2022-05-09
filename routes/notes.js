@@ -21,6 +21,24 @@ router.get('/notes', async (req,res) => {
   }) 
 })
 
+router.get('/notes/:id', async (req,res) => {
+  // res.render('notes-details')
+  const note = await Notes.findOne({
+    _id: req.params.id
+  }).lean()
+  console.log(note)
+  res.render('notes-details', {
+    note:note
+  })
+})
+
+router.post('/notes/:id', async (req,res) => {
+  // create  a new document on the database
+  await User.create(req.body)
+  // console.log(req.body)
+  res.render('notes-details', {})
+})
+
 router.post('/notes/create', async (req,res) => {
   // create  a new document on the database
   await Notes.create(req.body)
