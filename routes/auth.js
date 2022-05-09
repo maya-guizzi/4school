@@ -33,10 +33,14 @@ router.post('/login', async (req,res) => {
   })
 
   router.get('/signup', async (req,res) => {
-    const newUser = await User.create(req.body)
-    res.redirect('/', {
+    console.log(req.body)
+    res.render('signup')
+    //const newUser = await User.create(req.body)
+  })
 
-    })
+  router.post('/signup', async (req,res) => {
+    const newUser = await User.create(req.body)
+    res.render('signup')
   })
 
 module.exports = router;
