@@ -15,7 +15,7 @@ const router = express.Router()
 router.get('/', async (req,res) => {
   // render the list of articles
   const notes = await Notes.find().lean()
-  console.log(notes)
+  console.log(notes, req.session)
   res.render('homepage', {
     notes:notes,
     user: req.session.user
