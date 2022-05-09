@@ -17,7 +17,8 @@ router.get('/', async (req,res) => {
   const notes = await Notes.find().lean()
   console.log(notes)
   res.render('homepage', {
-    notes:notes
+    notes:notes,
+    user: req.session.user
   })
 })
 
