@@ -2,11 +2,19 @@
 const express = require('express')
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser');
-
+const cookieSession = require('cookie-session')
 
 // create the app
 const app =  express()
 app.use(express.static('public'))
+
+
+app.use(cookieSession({
+  name: 'session',
+  keys: "dljhdsljfh",
+  // Cookie Options
+  maxAge: 90*24 * 60 * 60 * 1000 // 24 hours
+}))
 
 // enable POST request
 app.use(bodyParser.urlencoded({
