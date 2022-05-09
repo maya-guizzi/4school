@@ -9,11 +9,33 @@ const User = mongoose.model('users')
 const router = express.Router()
 
 router.get('/login', async (req,res) => {
+
+  console.log(req.body)
+    res.render('login')
+  })
+
+
+router.post('/login', async (req,res) => {
+
+  console.log(req.body)
     // render the list of articles
-    const users = await User.find().lean()
-    console.log(users)
-    res.render('login', {
-        users:users
+    const user = await User.findOne({
+      email: req.body.email,
+      password: req.body.password,
+    }).lean()
+    console.log(user)
+    if (user){
+      // 
+      // req.session.user = user
+      res.redirect('homepage')
+    }
+    res.render('login')
+  })
+
+  router.get('/signup', async (req,res) => {
+    const newUser = await User.create(req.body)
+    res.redirect('/', {
+
     })
   })
 
