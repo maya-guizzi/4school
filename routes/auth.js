@@ -10,10 +10,7 @@ const router = express.Router()
 
 router.get('/login', async (req,res) => {
     // render the list of articles
-    const users = await User.find({
-      email: req.body.email, 
-      password: req.body.password
-    }).lean()
+    const users = await User.find().lean()
     console.log(users)
     res.render('login', {
         users:users
