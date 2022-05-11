@@ -3,6 +3,8 @@ const express = require('express')
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser');
 const cookieSession = require('cookie-session')
+const cookieParser = require('cookie-parser')
+
 
 // create the app
 const app =  express()
@@ -15,6 +17,8 @@ app.use(cookieSession({
   // Cookie Options
   maxAge: 90*24 * 60 * 60 * 1000 // 24 hours
 }))
+app.use(cookieParser());
+app.use(express.urlencoded({ extended: true }));
 
 // enable POST request
 app.use(bodyParser.urlencoded({
