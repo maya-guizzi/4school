@@ -1,12 +1,23 @@
+// dependencies 
 const express = require('express')
-const res = require('express/lib/response')
-const { route } = require('express/lib/router')
 const mongoose = require('mongoose')
+
+// Get the models
 const User = mongoose.model('users')
 
+
+// create the routes
+const router = express.Router()
+
+
 router.get('/', async (req,res) => {
-    if (req.session.user){
-      res.redirect("/profile")
-    }
-   
-    })
+  if (req.session.user){
+    res.redirect("/profile")
+  }
+ 
+  })
+
+
+
+// export the requests
+module.exports = router;
