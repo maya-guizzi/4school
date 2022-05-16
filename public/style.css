@@ -109,8 +109,146 @@ bottom: -50px;
 
 }
 
+.button {
+  display: inline-block;
+  /* Button is responsive to font size.*/  
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+
+  padding: 0.8em 1.5em;
+  border: none;
+  color: white;
+  transition: 0.4s;
+  text-decoration: none;
+  box-shadow: 10px;
+  text-transform: uppercase;
+  border-radius: 15px;
+  letter-spacing: 1px;
+    /* Setting opacity so button isn't so bright.  Could use a filter. */  
+   opacity: 0.95;
+/* Setting right padding for button 
+to push text away from the icon which is
+positioned as absolute to enable animations. 
+No need to declare button max/min width as button
+is responsive to font size.
+*/  
+   padding-right: 3.5em;
+  cursor: pointer;
+  
+}
+.button:before,
+.button:after {
+  position: absolute;
+  padding-top: inherit;
+  padding-bottom: inherit;
+  font-size: inherit;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 2.8em;
+  transition: 0.2s;
+  transform-origin: 50% 60%;}
 
 
+.arrow {
+  background: #74ABC9;
+}
+.arrow:hover {
+  background:#608496;
+}
+.arrow:active,
+.arrow:focus {
+  background: #608496;
+}
+/* Entity Icon   */
+.arrow:after {
+  content: "\2794";
+}
+
+.arrow:hover:after {
+  -webkit-animation: bounceright 0.3s alternate ease infinite;
+  animation: bounceright 0.3s alternate ease infinite;
+}
+
+
+.phone {
+  background: #333;
+}
+.phone:hover {
+  background: #111;
+}
+.phone:active,
+.phone:focus {
+  background: #3c3b6e;
+}
+
+/* Entity Icon   */
+.phone:after {
+  content: "\260E";
+}
+/* Set Phone Icon Wiggle Animation   */
+.phone:hover:after {
+  -webkit-animation: wiggle 0.05s alternate ease infinite;
+  animation: wiggle 0.05s alternate ease infinite;
+}
+
+/* Animations  */
+
+@-webkit-keyframes bounceright {
+  from {
+    -webkit-transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(3px);
+  }
+}
+@-webkit-keyframes wiggle {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(30deg);
+  }
+}
+@keyframes bounceright {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(3px);
+  }
+}
+@keyframes wiggle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(30deg);
+  }
+}
+
+
+body {
+  background: black;
+  text-align: center;
+  text-rendering: auto;
+  height: 100vh;
+  overflow: hidden;
+  padding-top: 100px;
+}
+* {
+  box-sizing: border-box;
+}
+
+.button {
+  margin: 25px;
+}
+
+.absolute {
+  position: absolute;
+  bottom: 50px;
+  right: 30px;
+}
 
 
 
