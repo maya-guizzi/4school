@@ -2,6 +2,8 @@
 const express = require('express')
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser');
+var session = require('express-session')
+
 const cookieSession = require('cookie-session')
 const cookieParser = require('cookie-parser')
 
@@ -11,13 +13,11 @@ const app =  express()
 app.use(express.static('public'))
 
 
-app.use(cookieSession({
-  name: 'session',
-  keys: "dljhdsljfh",
-  // Cookie Options
-  maxAge: 90*24 * 60 * 60 * 1000 // 24 hours
+app.use( session({
+  secret: 'keyboard cat',
+  resave: false,
+  saveUninitialized: true,
 }))
-app.use(cookieParser());
 app.use(express.urlencoded({ extended: true }));
 
 // enable POST request
@@ -47,7 +47,7 @@ app.use(require('./routes/forum'))
 app.use(require('./routes/homepage'))
 app.use(require('./routes/notes'))
 app.use(require('./routes/tags'))
-
+app.use(require('./routes/profile'))
 
 const frontendRoutes = require('./routes/homepage')
  

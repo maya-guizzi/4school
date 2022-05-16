@@ -16,30 +16,36 @@
     <h1 class="title">4school</h1> 
 
     <% if(user){ %>
-      <h1>Logged in as <%= user.email %></h1>
+      <h1>Logged in as <%= user.username%></h1>
    <% } else{ %>
       <h1>Not logged in</h1>
     <% } %>
     <marquee behavior="" direction=""  class="title" ></marquee>
     <div class="row">
 
-        <div class="col-md-3 text">filters
-          <button type="button" class="btn btn-primary btn-lg px">large</button>
-          <button type="button" class="btn btn-outline-light px">Light</button>
-          <button type="button" class="btn btn-outline-light px">Light</button>
-         <button type="button" class="btn btn-outline-light px">Light</button>
-         <button type="button" class="btn btn-primary btn-lg px">Large button</button>
-         <button type="button" class="btn btn-outline-light px">Light</button>
-         <button type="button" class="btn btn-outline-light px">Light</button>
-         <button type="button" class="btn btn-outline-light px">Light</button>
-         <button type="button" class="btn btn-primary btn-lg px">Large button</button>
-         <button type="button" class="btn btn-outline-light px">Light</button>
-         <button type="button" class="btn btn-outline-light px">Light</button>
-         <button type="button" class="btn btn-outline-light px">Light</button>
-         <button type="button" class="btn btn-primary btn-lg px">Large button</button>
-         <button type="button" class="btn btn-outline-light px">Light</button>
-         <button type="button" class="btn btn-outline-light px">Light</button>
-            <button type="button" class="btn btn-outline-light px">Light</button>
+        <div class="col-md-3 text">
+          <h2>FILTERS</h2>
+          <h4>Subjects</h4>
+          <button type="button" class="btn btn-outline-light px">italian</button>
+          <button type="button" class="btn btn-outline-light px">english</button>
+          <button type="button" class="btn btn-outline-light px">history</button>
+          <button type="button" class="btn btn-outline-light px">business</button>
+          <button type="button" class="btn btn-outline-light px">science</button>
+          <button type="button" class="btn btn-outline-light px">math</button>
+          <button type="button" class="btn btn-outline-light px">PHE</button>
+          <button type="button" class="btn btn-outline-light px">computer science</button>
+          <button type="button" class="btn btn-outline-light px">design</button>
+
+          <h4>Class</h4>
+          <button type="button" class="btn btn-outline-light px">MYP1</button>
+          <button type="button" class="btn btn-outline-light px">MYP2</button>
+          <button type="button" class="btn btn-outline-light px">MYP3</button>
+          <button type="button" class="btn btn-outline-light px">MYP4</button>
+          <button type="button" class="btn btn-outline-light px">MYP5</button>
+          <button type="button" class="btn btn-outline-light px">DP1</button>
+          <button type="button" class="btn btn-outline-light px">DP2</button>
+         
+         
         </div>
 
         <div class="col-md-6 text1 ">
@@ -58,6 +64,9 @@
         <div class="col-md-2 text">My Account:
 
             <a href="/login">login</a>
+        </div>
+        <div>
+          <a href="/profile.ejs ">Your Profile</a>
         </div>
       </div>
 

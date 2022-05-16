@@ -9,12 +9,16 @@ const User = mongoose.model('users')
 const router = express.Router()
 
 router.get('/login', async (req,res) => {
-
-  console.log(req.body)
+  if (req.session.user){
+    res.redirect("/")
+  }else {
+    console.log(req.body)
     res.render('login',{
       credentials: false
     })
-  })
+ 
+  }
+})
 
 
 router.post('/login', async (req,res) => {
@@ -28,7 +32,9 @@ router.post('/login', async (req,res) => {
     console.log(user)
     if (user){
       // 
-      req.session.user = user
+      console.log(user,req.session)
+      req.session.user =  user
+      console.log("new session to save",req.session)
       res.redirect('/')
     }
     res.render('login',{
