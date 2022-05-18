@@ -182,7 +182,6 @@ is responsive to font size.
   background: #3c3b6e;
 }
 
-/* Entity Icon   */
 .phone:after {
   content: "\260E";
 }
