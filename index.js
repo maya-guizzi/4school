@@ -52,6 +52,11 @@ app.use(require('./routes/tags'))
 app.use(require('./routes/profile'))
 
 const frontendRoutes = require('./routes/homepage')
+
+//Capture All 404 errors
+app.use(function (req,res,next){
+	res.status(404).send('Unable to find the requested resource!');
+});
  
 
 app.listen(3000)
