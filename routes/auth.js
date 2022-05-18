@@ -54,7 +54,10 @@ router.post('/login', async (req,res) => {
     res.redirect('/')
   })
 
-  router.
+  router.get('/logout', (req, res) => {
+    req.session.user = null
+    res.redirect('/')
+  })
 
 
 
