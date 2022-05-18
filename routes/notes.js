@@ -39,11 +39,11 @@ router.get('/notes/:id', async (req,res) => {
 })
 
 
-router.post('/notes/:id', async (req,res) => {
+router.post('/notes/create', async (req,res) => {
   // create  a new document on the database
-  await User.create(req.body)
+  const notes = await Notes.create(req.body)
   // console.log(req.body)
-  res.render('notes-details', {})
+  res.redirect('/notes/'+notes._id)
 })
 
 // router.post('/notes/create', async (req,res) => {
