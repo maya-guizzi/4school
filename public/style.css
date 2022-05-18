@@ -120,7 +120,7 @@ bottom: -50px;
   color: white;
   transition: 0.4s;
   text-decoration: none;
-  box-shadow: 10px;
+  box-shadow: 10;
   text-transform: uppercase;
   border-radius: 15px;
   letter-spacing: 1px;
@@ -233,7 +233,7 @@ body {
   text-align: center;
   text-rendering: auto;
   height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
   padding-top: 100px;
 }
 * {
