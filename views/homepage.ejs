@@ -58,6 +58,8 @@
                   <h2><%= note.title %> </h3>
                   <img src="<%= note.image %>" alt="">
                   <h4><%- notes.caption %> </h4>
+                  <h4><%- notes.subject %> </h4>
+                  <h4><%- notes.class %> </h4>
                   <a href="/notes/<%= note._id %>">open notes</a>
                 </div>
               <% }); %>
