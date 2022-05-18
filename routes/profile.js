@@ -10,7 +10,9 @@ const User = mongoose.model('users')
 const router = express.Router()
 
 router.get('/profile', (req,res) => {
-  res.render('profile', {})
+  res.render('profile', {
+   req.session.user
+  })
 })
 
 router.get('/', async (req,res) => {
