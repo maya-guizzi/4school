@@ -14,6 +14,9 @@ app.use(express.static('public'))
 
 
 app.use( session({
+  cookie:{
+    maxAge: 1000 * 60 * 60 * 24 * 30
+  },
   secret: 'keyboard cat',
   resave: false,
   saveUninitialized: true,
