@@ -23,7 +23,8 @@
     <marquee behavior="" direction=""  class="title" ></marquee>
     <div class="row">
 
-        <div class="col-md-3 text">
+        <div class="col-md-3 text" style="height: 80vh;
+        overflow: auto;">
           <h2>FILTERS</h2>
           <h4>Subjects</h4>
           <button type="button" class="btn btn-outline-light px">italian</button>
@@ -48,19 +49,67 @@
          
         </div>
 
-        <div class="col-md-6 text1 ">
+        <div class="col-md-6 text1 " style="height: 80vh;
+        overflow: auto;">
 
+          <div class="container">
+            <div class="tabbar tab-style2">
+              <ul class="flex-center">
+                <li class="home active" data-where="home"><span class="material-icons-outlined">
+                    home
+                  </span></li>
+                <li class="products" data-where="products"><span class="material-icons-outlined">
+                    shopping_bag
+                  </span></li>
+                <li class="services" data-where="services"><span class="material-icons-outlined">
+                    plumbing
+                  </span></li>
+                <li class="about" data-where="about"><span class="material-icons-outlined">
+                    business
+                  </span></li>
+                <li class="help" data-where="help"><span class="material-icons-outlined">
+                    help_outline
+                  </span></li>
+              </ul>
+            </div>
+          </div>
+        
+          <div class="container">
+            <div class="tabbar tab-style1">
+              <ul class="flex-center">
+                <li class="home active" data-where="home"><span class="material-icons-outlined">
+                    home
+                  </span></li>
+                <li class="products" data-where="products"><span class="material-icons-outlined">
+                    shopping_bag
+                  </span></li>
+                <li class="services" data-where="services"><span class="material-icons-outlined">
+                    plumbing
+                  </span></li>
+                <li class="about" data-where="about"><span class="material-icons-outlined">
+                    business
+                  </span></li>
+                <li class="help" data-where="help"><span class="material-icons-outlined">
+                    help_outline
+                  </span></li>
+                <li class="follow">&nbsp;</li>
+              </ul>
+            </div>
+          </div>
     <a href="/notes/create">create notes</a>
             <% notes.forEach( (note) => { %>
                 <div class ="box sb1">
                   <h2><%= note.title %> </h3>
                   <img src="<%= note.image %>" alt="">
                   <h4><%- notes.caption %> </h4>
+                  <h4><%- notes.subject %> </h4>
+                  <h4><%- notes.class %> </h4>
                   <a href="/notes/<%= note._id %>">open notes</a>
                 </div>
               <% }); %>
         </div>
-        <div class="col-md-2 text">my account
+        <div class="col-md-2 text" style="height: 80vh;
+        overflow: auto;">my account
 
         <div class="col-md-6 text1 ">body</div>
         <div class="col-md-2 text">My Account:
