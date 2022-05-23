@@ -34,7 +34,7 @@
    background-color: #74ABC9;
     }
  .col-md-6 {
-    background-color: #FFFBFC;
+    background-color: #74ABC9;
      }
 .col-md-3 {
   background-color: #74ABC9;
@@ -258,7 +258,7 @@ body {
 .form {
   position: relative;
   z-index: 1;
-  background: #FFFFFF;
+  background: #FFFFFF;;
   max-width: 360px;
   margin: 0 auto 100px;
   padding: 45px;
@@ -268,7 +268,7 @@ body {
 .form input {
   font-family: "Roboto", sans-serif;
   outline: 0;
-  background: #f2f2f2;
+  background: #FFFFFF;
   width: 100%;
   border: 0;
   margin: 0 0 15px;
@@ -339,7 +339,7 @@ body {
   color: #EF3B3A;
 }
 body {
-  background: #74ABC9; /* fallback for old browsers */
+  background: #74ABC9;
   background: #74ABC9;
   background: linear-gradient(90deg, #74ABC9) 0%, #74ABC9 50%;
   font-family: "Roboto", sans-serif;
