@@ -11,17 +11,10 @@ const router = express.Router()
 
 router.get('/profile', (req,res) => {
 
- req.session.user
-res.redirect("/profile")
+ user = req.session.user
+res.render("profile")
  
 })
-
-router.get('/', async (req,res) => {
-  if (req.session.user){
-    res.redirect('/profile')
-  }
- 
-  })
 
 
 
