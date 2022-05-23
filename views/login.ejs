@@ -48,14 +48,14 @@
         <input type="password" placeholder="Enter Password" name="password" required>
 
             <button>create</button>
-            <p class="message">Already registered? <a href="#">Sign In</a></p>
+            <p class="message">Already registered? <a href="/login">Log In</a></p>
           </form>
 
           <form class="login-form">
-            <input type="text" placeholder="username"/>
-            <input type="password" placeholder="password"/>
+            <input type="text" placeholder="Enter Username" name="email" required>
+            <input type="password" placeholder="Enter Password" name="password" required>
             <button>login</button>
-            <p class="message">Not registered? <a href="#">Create an account</a></p>
+            <p class="message">Not registered? <a href="/signup">Create an account</a></p>
           </form>
         </div>
       </div>
@@ -64,9 +64,9 @@
     
 
     <!-- <h1 class="title">Log in</h1>
-    <% if (credentials){%> 
-        <div class="alert alert-danger">  <%= credentials %> </div>
-    <%} %> 
+     
+        <div class="alert alert-danger">  </div>
+   
     <form class="container" method="post">
         <label for="email"><b>Username or email</b></label>
         <input type="text" placeholder="Enter Username" name="email" required>
