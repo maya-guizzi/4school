@@ -61,9 +61,6 @@ router.post('/notes/:id', async (req,res) => {
   const note = await Notes.findOne({
     _id : req.params.id
   })
-  const comments = await Comment.find({
-    note: req.params.id,
-  })
   // console.log(req.body)
   if (req.session.user){
     await Comment.create({
@@ -73,6 +70,10 @@ router.post('/notes/:id', async (req,res) => {
       likes: 0,
     })
   }
+
+  const comments = await Comment.find({
+    note: req.params.id,
+  })
   res.render('notes-details', {
     comments,
     note: note,
