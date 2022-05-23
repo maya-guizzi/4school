@@ -18,7 +18,8 @@ router.get('/', async (req,res) => {
   console.log(notes, req.session)
   res.render('homepage', {
     notes:notes,
-    user: req.session.user
+    user: req.session.user,
+    filter: false
   })
 })
 
