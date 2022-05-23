@@ -34,7 +34,9 @@
           <div><%= comment.content %> </div>
           <div>
             Likes: <%= comment.likes %> 
-            <a href="">Aggiungi like</a>
+            <% if (user){ %> 
+              <a href="/likes/<%= comment._id %>">Aggiungi like</a>
+            <% } %> 
           </div>
         </div>
       <% }); %>
