@@ -35,7 +35,7 @@ router.get('/notes/:id', async (req,res) => {
   }).lean()
   const comments = await Comment.find({
     note: req.params.id,
-  })
+  }).lean()
   console.log(comments)
   if (note){
     res.render('notes-details', {
@@ -65,18 +65,18 @@ router.post('/notes/:id', async (req,res) => {
     note: req.params.id,
   })
   // console.log(req.body)
-  if (req.user){
+  if (req.session.user){
     await Comment.create({
-      user: req.user._id,
+      user: req.session.user.username,
       note: req.params.id,
       ...req.body,
       likes: 0,
     })
   }
-  res.render('create-notes', {
+  res.render('notes-details', {
     comments,
     note: note,
-    user: req.params.user
+    user: req.session.user
   })  
 
 })
