@@ -12,7 +12,7 @@
      <title>Log in</title>
 </head>
 <body>
-    <div class="login-page">
+    <div class="login-page bck1">
         <div class="form">
           <form class="register-form">
             <input type="text" placeholder="name"/>
@@ -21,6 +21,7 @@
             <button>create</button>
             <p class="message">Already registered? <a href="#">Sign In</a></p>
           </form>
+
           <form class="login-form">
             <input type="text" placeholder="username"/>
             <input type="password" placeholder="password"/>
@@ -31,6 +32,7 @@
       </div>
         
   </div> <!-- /form -->
+  
     <h1 class="title">Log in</h1>
     <% if (credentials){%> 
         <div class="alert alert-danger">  <%= credentials %> </div>
@@ -45,6 +47,21 @@
         <button type="submit">Login</button>
       
     </form>
+
+    <!-- <h1 class="title">Log in</h1>
+    <% if (credentials){%> 
+        <div class="alert alert-danger">  <%= credentials %> </div>
+    <%} %> 
+    <form class="container" method="post">
+        <label for="email"><b>Username or email</b></label>
+        <input type="text" placeholder="Enter Username" name="email" required>
+    
+        <label for="password"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="password" required>
+            
+        <button type="submit">Login</button>
+      
+    </form> -->
     
       <a href="/signup">Sign Up</a>
       <a href="/">Homepage</a>
