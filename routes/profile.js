@@ -11,7 +11,7 @@ const router = express.Router()
 
 router.get('/profile', (req,res) => {
   res.render('profile', {
-   req.session.user
+   user : req.session.user
   })
 })
 
