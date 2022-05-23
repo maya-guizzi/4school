@@ -74,6 +74,7 @@ router.post('/notes/:id', async (req,res) => {
   const comments = await Comment.find({
     note: req.params.id,
   })
+  
   res.render('notes-details', {
     comments,
     note: note,
