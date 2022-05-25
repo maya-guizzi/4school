@@ -1,6 +1,8 @@
 @font-face {
     font-family: "font1";
     src: url("fonts/a_big_deal/aBigDeal.ttf");
+    font-family: "font2";
+    src: url("fonts/jabore.otf");
   }
 
 .title {
@@ -110,6 +112,7 @@ bottom: -50px;
 }
 
 .title2 {
+  font-family: font2;
 
 }
 
