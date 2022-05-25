@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
 
 </head>
 <body>
@@ -35,7 +36,10 @@
           <div>
             Likes: <%= comment.likes %> 
             <% if (user){ %> 
-              <a href="/likes/<%= comment._id %>">Aggiungi like</a>
+              <!-- <a href="/likes/<%= comment.id  %>">Aggiungi like</a> -->
+              <div class="placement">
+                <a class="heart" href="/likes/<%= comment._id  %>"></a>
+              </div>
             <% } %> 
           </div>
         </div>
@@ -54,9 +58,20 @@
       </div>  
     <% }else{  %>
       <h2>To comment, register </h2> 
-      <a href="#todo">Register</a>
+      <a href="/login">Register</a>
     <% }  %> 
    
- 
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+ <script>
+    $(function() {
+      $(".heart").on("click", function(e) {
+        e.preventDefault()
+        $(this).toggleClass("is-active");
+        setTimeout(() => {
+          location.href= $(this).attr('href')
+        },1000)
+      });
+    });
+ </script>
 </body>
 </html>
