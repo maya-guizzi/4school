@@ -8,16 +8,13 @@
     color: black;
     font-size: 65px;
     text-align: center;
+    margin-top: 20px;
 }    
 .bck{
   background-color: #FFFBFC;
 }
-.bck1{
-  background-color: #74ABC9;
-}
 
-
-.text1{
+.\  text1{
   font-family: 'Lato', sans-serif;
   size: 20px;
   color: black;
@@ -33,7 +30,7 @@
    background-color: #74ABC9;
     }
  .col-md-6 {
-    background-color: #74ABC9;
+    background-color: #FFFBFC;
      }
 .col-md-3 {
   background-color: #74ABC9;
@@ -51,9 +48,10 @@
 
 .title {
   font-family: font1;
-  color: #30414A;
+  color: #30414b;
   font-size: 65px;
   text-align: center;
+  margin-top: 20px;
 }    
 .bck{
 background-color: #FFFBFC;
@@ -111,237 +109,10 @@ bottom: -50px;
 
 }
 
-.button {
-  display: inline-block;
-  /* Button is responsive to font size.*/  
-  font-size: 18px;
-  -webkit-font-smoothing: antialiased;
+.title2 {
 
-  padding: 0.8em 1.5em;
-  border: none;
-  color: white;
-  transition: 0.4s;
-  text-decoration: none;
-  box-shadow: 10;
-  text-transform: uppercase;
-  border-radius: 15px;
-  letter-spacing: 1px;
- 
-   opacity: 0.95;
-
-   padding-right: 3.5em;
-  cursor: pointer;
-  
-}
-.button:before,
-.button:after {
-  position: absolute;
-  padding-top: inherit;
-  padding-bottom: inherit;
-  font-size: inherit;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  width: 2.8em;
-  transition: 0.2s;
-  transform-origin: 50% 60%;}
-
-
-.arrow {
-  background: #74ABC9;
-}
-.arrow:hover {
-  background:#608496;
-}
-.arrow:active,
-.arrow:focus {
-  background: #608496;
-}
-/* Entity Icon   */
-.arrow:after {
-  content: "\2794";
-}
-
-.arrow:hover:after {
-  -webkit-animation: bounceright 0.3s alternate ease infinite;
-  animation: bounceright 0.3s alternate ease infinite;
 }
 
 
-.phone {
-  background: #333;
-}
-.phone:hover {
-  background: #111;
-}
-.phone:active,
-.phone:focus {
-  background: #3c3b6e;
-}
 
-.phone:after {
-  content: "\260E";
-}
-/* Set Phone Icon Wiggle Animation   */
-.phone:hover:after {
-  -webkit-animation: wiggle 0.05s alternate ease infinite;
-  animation: wiggle 0.05s alternate ease infinite;
-}
-
-/* Animations  */
-
-@-webkit-keyframes bounceright {
-  from {
-    -webkit-transform: translateX(0);
-  }
-  to {
-    -webkit-transform: translateX(3px);
-  }
-}
-@-webkit-keyframes wiggle {
-  from {
-    -webkit-transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(30deg);
-  }
-}
-@keyframes bounceright {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(3px);
-  }
-}
-@keyframes wiggle {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(30deg);
-  }
-}
-
-
-body {
-  background: black;
-  text-align: center;
-  text-rendering: auto;
-  height: 100vh;
-  overflow-x: hidden;
-  padding-top: 100px;
-}
-* {
-  box-sizing: border-box;
-}
-
-.button {
-  margin: 25px;
-}
-
-.absolute {
-  position: absolute;
-  bottom: 50px;
-  right: 30px;
-}
-
-@import url(https://fonts.googleapis.com/css?family=Roboto:300);
-
-.login-page {
-  width: 350px;
-  padding: 8% 0 0;
-  margin: auto;
-}
-.form {
-  position: relative;
-  z-index: 1;
-  background: #FFFFFF;;
-  max-width: 360px;
-  margin: 0 auto 100px;
-  padding: 45px;
-  text-align: center;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-}
-.form input {
-  font-family: "Roboto", sans-serif;
-  outline: 0;
-  background: #FFFFFF;
-  width: 100%;
-  border: 0;
-  margin: 0 0 15px;
-  padding: 15px;
-  box-sizing: border-box;
-  font-size: 14px;
-}
-.form button {
-  font-family: "Roboto", sans-serif;
-  text-transform: uppercase;
-  outline: 0;
-  background: #74ABC9;
-  width: 100%;
-  border: 0;
-  padding: 15px;
-  color: #FFFFFF;
-  font-size: 14px;
-  -webkit-transition: all 0.3 ease;
-  transition: all 0.3 ease;
-  cursor: pointer;
-}
-.form button:hover,.form button:active,.form button:focus {
-  background: #74ABC9;
-}
-.form .message {
-  margin: 15px 0 0;
-  color: #b3b3b3;
-  font-size: 12px;
-}
-.form .message a {
-  color: #74ABC9;
-  text-decoration: none;
-}
-.form .register-form {
-  display: none;
-}
-.container {
-  position: relative;
-  z-index: 1;
-  max-width: 300px;
-  margin: 0 auto;
-}
-.container:before, .container:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-.container .info {
-  margin: 50px auto;
-  text-align: center;
-}
-.container .info h1 {
-  margin: 0 0 15px;
-  padding: 0;
-  font-size: 36px;
-  font-weight: 300;
-  color: #1a1a1a;
-}
-.container .info span {
-  color: #4d4d4d;
-  font-size: 12px;
-}
-.container .info span a {
-  color: #000000;
-  text-decoration: none;
-}
-.container .info span .fa {
-  color: #EF3B3A;
-}
-body {
-  background: #74ABC9;
-  background: #74ABC9;
-  background: linear-gradient(90deg, #74ABC9) 0%, #74ABC9 50%;
-  font-family: "Roboto", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;      
-}
 
