@@ -7,8 +7,18 @@
     <title>Your profile</title>
 </head>
 <body>
-    <h1>Your Profile</h1>
-    <h1>User: <%= user.username%></h1>
+    <h1 class="profileTitle">Your Profile</h1>
+    <% if(user){ %>
+        <h1>You are: <%= user.username %></h1>
+     <% } else{ %>
+        <h1>Not logged in</h1>
+      <% } %>
    
+
+      <% if(user){ %>
+        <h1>Your points: <%= user.points %></h1>
+     <% } else{ %>
+        <p>Log in to see your points!</p>
+      <% } %>
 </body>
 </html>

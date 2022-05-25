@@ -14,6 +14,9 @@ app.use(express.static('public'))
 
 
 app.use( session({
+  cookie:{
+    maxAge: 1000 * 60 * 60 * 24 * 30
+  },
   secret: 'keyboard cat',
   resave: false,
   saveUninitialized: true,
@@ -49,6 +52,7 @@ app.use(require('./routes/forum'))
 app.use(require('./routes/homepage'))
 app.use(require('./routes/notes'))
 app.use(require('./routes/tags'))
+app.use(require('./routes/likes'))
 app.use(require('./routes/profile'))
 
 const frontendRoutes = require('./routes/homepage')

@@ -10,15 +10,11 @@ const User = mongoose.model('users')
 const router = express.Router()
 
 router.get('/profile', (req,res) => {
-  res.render('profile', {})
-})
 
-router.get('/', async (req,res) => {
-  if (req.session.user){
-    res.redirect('/profile')
-  }
+ user = req.session.user
+res.render("profile")
  
-  })
+})
 
 
 

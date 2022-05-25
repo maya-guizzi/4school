@@ -4,6 +4,7 @@ const mongoose = require('mongoose')
 
 // Get the models
 const Notes = mongoose.model('notes')
+const Comment = mongoose.model('comments')
 const Forum = mongoose.model('forum')
 
 
@@ -32,10 +33,19 @@ router.get('/notes/:id', async (req,res) => {
   const note = await Notes.findOne({
     _id: req.params.id
   }).lean()
-  console.log(note)
-  res.render('notes-details', {
-    note:note
-  })
+  const comments = await Comment.find({
+    note: req.params.id,
+  }).lean()
+  console.log(comments)
+  if (note){
+    res.render('notes-details', {
+      note:note,
+      comments,
+      user: req.session.user
+    })
+  }else{
+    res.redirect("/")
+  }
 })
 
 
@@ -46,12 +56,32 @@ router.post('/notes/create', async (req,res) => {
   res.redirect('/notes/'+notes._id)
 })
 
-// router.post('/notes/create', async (req,res) => {
-//   // create  a new document on the database
-//   await Notes.create(req.body)
-//   // console.log(req.body)
-//   res.render('create-notes', {})
-// })
+router.post('/notes/:id', async (req,res) => {
+  // create  a new comment
+  const note = await Notes.findOne({
+    _id : req.params.id
+  })
+  // console.log(req.body)
+  if (req.session.user){
+    await Comment.create({
+      user: req.session.user.username,
+      note: req.params.id,
+      ...req.body,
+      likes: 0,
+    })
+  }
+
+  const comments = await Comment.find({
+    note: req.params.id,
+  })
+  
+  res.render('notes-details', {
+    comments,
+    note: note,
+    user: req.session.user
+  })  
+
+})
 
 // export the requests
 module.exports = router;
