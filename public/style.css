@@ -121,3 +121,20 @@ bottom: -50px;
   padding: 10px;
 }
 
+.abc {
+  margin-top: 35px;
+  margin-left: 30px;
+}
+
+.create {
+  text-align: center;
+}
+
+.submit {
+  text-align: inherit;
+  padding-top: 15px;
+}
+
+.tn {
+  padding-top: 20px;
+}
