@@ -12,52 +12,70 @@
     <title>Create notes</title>
   </head>
   <body>
-    <h1 class="title" >Add your notes</h1>
-    <a href="/">Homepage</a>
 
-    <form action="/notes/create" method="POST">
-      <div class="px-5">
-      <label for="">Title</label>
-      <input type="text" name="title" />
-      
-      <!-- <label for="">Upload your notes</label>
-      <input type="file" name="image"> -->
-      <!-- <label for="">Upload your notes</label>
-      <input type="text" name="image">
-       -->
-      <label for="">Caption</label>
-      <textarea type="text" name="caption"></textarea>
-      
-      <label for="">Tags</label>
-      
-      <select name="subject" id="" multiple>
-        <optgroup label="Subjects">
-          <option value="italian">italian</option>
-          <option value="english">english</option>
-          <option value="history">history</option>
-          <option value="business">business</option>
-          <option value="science">science</option>
-          <option value="math">math</option>
-          <option value="PHE">PHE</option>
-          <option value="computerscience">computer science</option>
-          <option value="design">design</option>
-        </optgroup>
-      </select>
+    <div class="row">
+      <div class="col-2">
+        <a class="btn btn-light abc" href="/">Homepage</a> 
+      </div>
+      <div class="col-8">
+        <h1 class="title tn" >Add your notes</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col create">
+        <form action="/notes/create" method="POST">
+          <div class="px-5">
+          <label for="">Title</label>
+          <input type="text" name="title" />
+          
+          <!-- <label for="">Upload your notes</label>
+          <input type="file" name="image"> -->
+          <!-- <label for="">Upload your notes</label>
+          <input type="text" name="image">
+           -->
+          <label for="">Caption</label>
+          <input type="text" name="caption" />
+          
+          <label for="">Tags</label>
+          
+          <select name="subject" id="">
+            <optgroup label="Subjects">
+              <option value="italian">italian</option>
+              <option value="english">english</option>
+              <option value="history">history</option>
+              <option value="business">business</option>
+              <option value="science">science</option>
+              <option value="math">math</option>
+              <option value="PHE">PHE</option>
+              <option value="computerscience">computer science</option>
+              <option value="design">design</option>
+            </optgroup>
+          </select>
+    
+          <select name="year" id="">
+            <optgroup label="Class">
+              <option value="MYP1">MYP1</option>
+              <option value="MYP2">MYP2</option>
+              <option value="MYP3">MYP3</option>
+              <option value="MYP4">MYP4</option>
+              <option value="MYP5">MYP5</option>
+              <option value="DP1">DP1</option>
+              <option value="DP2">DP2</option>
+    
+            </optgroup>
+          </select>
+      </div>
+      <div class="row">
+        <div class="col submit">
+          <button type="submit" class="btn btn-light button arrow text absolute" >Create</button>
+        </div>
+      </div>
+    </div>
+    
+   
 
-      <select name="year" id="" multiple>
-        <optgroup label="Class">
-          <option value="MYP1">MYP1</option>
-          <option value="MYP2">MYP2</option>
-          <option value="MYP3">MYP3</option>
-          <option value="MYP4">MYP4</option>
-          <option value="MYP5">MYP5</option>
-          <option value="DP1">DP1</option>
-          <option value="DP2">DP2</option>
+    
 
-        </optgroup>
-      </select>
-
-      <button type="submit" class="button arrow text absolute" >Create</button>
     </div>
     </form>
   </body>
