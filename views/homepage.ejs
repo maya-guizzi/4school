@@ -55,6 +55,7 @@
           
 
           <h4>Class</h4>
+        <div class="row">
           <a href="/classes/MYP1" class="btn btn-outline-light px mt-2">MYP1</a>
           <a href="/classes/MYP2" class="btn btn-outline-light px mt-2">MYP2</a>
           <a href="/classes/MYP3" class="btn btn-outline-light px mt-2">MYP3</a>
@@ -63,8 +64,9 @@
           <a href="/classes/MYP5" class="btn btn-outline-light px mt-2">MYP5</a>
           <a href="/classes/DP1" class="btn btn-outline-light px mt-2">DP1</a>
           <a href="/classes/DP2" class="btn btn-outline-light px mt-2">DP2</a>
-         
-         
+          <div class="col-3 filters">
+         </div>
+         </div>
         </div>
 
         <div class="col-md-6 text1 " style="height: 80vh;
@@ -75,7 +77,7 @@
               <h1>Filtered by <%= filter.type %> : <%= filter.value %> </h1>
               <a href="/">Reset</a>
             <% } %> 
-            <a href="/notes/create">create notes</a>
+            <a class="btn btn-outline-dark" href="/notes/create">create notes</a>
             <% notes.forEach( (note) => { %>
                 <div class ="box sb1">
                   <h2><%= note.title %> </h3>
@@ -83,7 +85,7 @@
                   <h4><%- notes.caption %> </h4>
                   <h4><%- notes.subject %> </h4>
                   <h4><%- notes.class %> </h4>
-                  <a href="/notes/<%= note._id %>">open notes</a>
+                  <a class="btn btn-outline-light" href="/notes/<%= note._id %>">open notes</a>
                 </div>
               <% }); %>
         </div>
@@ -93,15 +95,15 @@
         <!-- <div class="col-md-6 text1 ">body</div> -->
         
         <div>
-          <a href="/login">login</a>
+          <a class="btn btn-outline-light" href="/login">login</a>
         </div>
 
         <div>
-          <a href="/logout">logout</a>
+          <a class="btn btn-outline-light" href="/logout">logout</a>
         </div>
 
         <div>
-          <a href="/profile">Your Profile</a>
+          <a class="btn btn-outline-light" href="/profile">Your Profile</a>
         </div>
 
 
