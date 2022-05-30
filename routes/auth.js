@@ -2,7 +2,7 @@ const express = require('express')
 const res = require('express/lib/response')
 const { route } = require('express/lib/router')
 const mongoose = require('mongoose')
-
+const md5 = require("md5")
 
 const User = mongoose.model('users')
 
