@@ -1,6 +1,7 @@
 // dependencies 
 const express = require('express')
 const mongoose = require('mongoose')
+const upload = multer({ dest: 'uploads/' })
 
 // Get the models
 const Notes = mongoose.model('notes')
@@ -51,7 +52,10 @@ router.get('/notes/:id', async (req,res) => {
 
 router.post('/notes/create', async (req,res) => {
   // create  a new document on the database
-  const notes = await Notes.create(req.body)
+  const notes = await Notes.create({
+    ...req.body,
+    image
+  })
   // console.log(req.body)
   res.redirect('/notes/'+notes._id)
 })
