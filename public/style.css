@@ -24,9 +24,15 @@
 
 .text{
   font-family: 'Lato', sans-serif;
-  size: 20px;
+  font-size: 20px;
   color: #FFFBFC;
 } 
+
+.text-log{
+  font-family: 'Lato', sans-serif;
+  font-size: 40px;
+  color: black;
+}
 
 .col-md-2 {
    background-color: #74ABC9;
@@ -61,7 +67,7 @@ background-color: #FFFBFC;
 
 .text1{
 font-family: 'Lato', sans-serif;
-size: 20px;
+size: 50px;
 color: #30414A;
 } 
 
@@ -120,9 +126,30 @@ bottom: -50px;
   text-align: center;
   padding: 10px;
 }
+.div1 {
+  width: 400px;
+  height: 450px;
+  background-color:#74ABC9; ;
+  border: #30414A;
+  padding: 50px;
+  margin: 20px;
+  position: absolute;
+  left: 34.5%;
+  bottom: 20%;
+  font-family: 'Lato', sans-serif;
+  font-size: 25px;
+  color: black;
+  box-shadow: 2px 2px 10px 2px black;
+}
+
+.loginbtn{
+  position: absolute;
+  left: 40%;
+  bottom: 7%;
+}
 
 .abc {
-  margin-top: 35px;
+  margin-top: 30px;
   margin-left: 30px;
 }
 
@@ -137,4 +164,12 @@ bottom: -50px;
 
 .tn {
   padding-top: 20px;
+}
+
+
+.textl{
+  font-family: 'Lato', sans-serif;
+  font-size: 23px;
+  color: black;
+  text-align: center;
 }

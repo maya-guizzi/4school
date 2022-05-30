@@ -13,28 +13,29 @@
 
 </head>
 <body>
-  
-  <h1>Notes Details</h1>
-  
-    <div>
-      <h2><%= note.title %> </h3>
+ 
+    <div class="lineround">
+      <h1><%= note.title %> </h1>
+      <h2>Notes Details</h2>
         <!-- <img src="<%= note.image %>" alt=""> -->
         <img src="<%= note.image %>" alt="">
         <h4><%- note.caption %> </h4>
         <h4>Subject: <%- note.subject %> </h4>
         <h4>Class: <%- note.year %> </h4>
-
     </div>
 
+  
+  
 
+<div class="lineround">
     <div class="comments">
-      <h2>COmments</h2>
+      <h2>Comments</h2>
 
       <% comments.forEach( (comment) => { %>
         <div class ="box sb1">
           <h2><%= comment.user %> </h3>
-          <div><%= comment.content %> </div>
-          <div>
+          <div class="comment-content"><%= comment.content %> </div>
+          <div class="comment-like">
             Likes: <%= comment.likes %> 
             <% if (user){ %> 
               <!-- <a href="/likes/<%= comment.id  %>">Aggiungi like</a> -->
@@ -46,12 +47,13 @@
         </div>
       <% }); %>
     </div>
+  </div>
 
     <% if (user){ %>
       <div class="container">
         <form action="" method="post">
           <div class="form-group">
-            <label for="comment">Comment:</label>
+            <label for="comment">Add a comment:</label>
             <textarea class="form-control" rows="5" id="comment" name="content"></textarea>
           </div>
           <button type="submit" class="btn btn-primary">Submit</button>
