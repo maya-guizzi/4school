@@ -27,7 +27,7 @@ router.post('/login', async (req,res) => {
     // render the list of articles
     const user = await User.findOne({
       email: req.body.email,
-      password: req.body.password,
+      password: md5(req.body.password),
     }).lean()
     console.log(user)
     if (user){
@@ -49,7 +49,10 @@ router.post('/login', async (req,res) => {
   })
 
   router.post('/signup', async (req,res) => {
-    const newUser = await User.create(req.body)
+    const newUser = await User.create({
+      ...req.body,
+      password: md5(req.body.password)
+    })
     req.session.user = newUser
     res.redirect('/')
   })
