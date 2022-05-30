@@ -25,17 +25,34 @@
 
         <div class="col-md-3 text" style="height: 80vh;
         overflow: auto;">
-          <h2>FILTERS</h2>
-          <h4>Subjects</h4>
-          <a href="/subjects/italian" class="btn btn-outline-light px">italian</a>
-          <a href="/subjects/english" class="btn btn-outline-light px">english</a>
-          <a href="/subjects/history" class="btn btn-outline-light px">history</a>
-          <a href="/subjects/business" class="btn btn-outline-light px">business</a>
-          <a href="/subjects/science" class="btn btn-outline-light px">science</a>
-          <a href="/subjects/math" class="btn btn-outline-light px">math</a>
-          <a href="/subjects/PHE" class="btn btn-outline-light px">PHE</a>
-          <a href="/subjects/computer science" class="btn btn-outline-light px">computer science</a>
-          <a href="/subjects/design" class="btn btn-outline-light px">design</a>
+          <div class="row">
+            <div class="col">
+              <h2>FILTERS</h2>
+              <h4>Subjects</h4>
+            </div>
+          </div>
+          
+          <div class="row ">
+            <div class="col-3 filters">
+              <a href="/subjects/italian" class="btn btn-outline-light px">italian</a>
+              <a href="/subjects/english" class="btn btn-outline-light px">english</a>
+              <a href="/subjects/history" class="btn btn-outline-light px">history</a>
+            </div>
+
+            <div class="col-3 filters">
+              <a href="/subjects/business" class="btn btn-outline-light px">business</a>
+              <a href="/subjects/science" class="btn btn-outline-light px">science</a>
+              <a href="/subjects/math" class="btn btn-outline-light px">math</a>
+            </div>
+
+            <div class="col-3 filters">
+              <a href="/subjects/PHE" class="btn btn-outline-light px">PHE</a>
+              <a href="/subjects/computer science" class="btn btn-outline-light px">cs</a>
+              <a href="/subjects/design" class="btn btn-outline-light px">design</a>
+            </div>
+          </div>
+          
+          
 
           <h4>Class</h4>
           <a href="/classes/MYP1" class="btn btn-outline-light px">MYP1</a>
@@ -70,16 +87,21 @@
               <% }); %>
         </div>
         <div class="col-md-2 text" style="height: 80vh;
-        overflow: auto;">my account
+        overflow: auto;">My Account
 
-        <div class="col-md-6 text1 ">body</div>
-        <div class="col-md-2 text">My Account:
-
-            <a href="/login">login</a>
+        <!-- <div class="col-md-6 text1 ">body</div> -->
+        
+        <div>
+          <a href="/login">login</a>
         </div>
-        <a href="/logout">logout</a>
+
+        <div>
+          <a href="/logout">logout</a>
+        </div>
+
         <div>
           <a href="/profile">Your Profile</a>
+        </div>
 
 
 
