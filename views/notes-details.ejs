@@ -29,19 +29,16 @@
 
 <div class="lineround">
     <div class="comments">
-      <h2>Comments</h2>
+      <h1>Comments</h1>
 
       <% comments.forEach( (comment) => { %>
         <div class ="box sb1">
-          <h2><%= comment.user %> </h3>
+          <h2><%= comment.user %>:</h3>
           <div class="comment-content"><%= comment.content %> </div>
           <div class="comment-like">
-            Likes: <%= comment.likes %> 
+            Likes: <%= comment.likes %> <a class="heart" href="/likes/<%= comment._id  %>"></a>
             <% if (user){ %> 
-              <!-- <a href="/likes/<%= comment.id  %>">Aggiungi like</a> -->
-              <div class="placement">
-                <a class="heart" href="/likes/<%= comment._id  %>"></a>
-              </div>
+
             <% } %> 
           </div>
         </div>
