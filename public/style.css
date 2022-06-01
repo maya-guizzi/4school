@@ -128,13 +128,13 @@ bottom: -50px;
 }
 .div1 {
   width: 400px;
-  height: 450px;
+  height: 400px;
   background-color:#74ABC9; ;
   border: #30414A;
   padding: 50px;
   margin: 20px;
   position: absolute;
-  left: 34.5%;
+  left: 35%;
   bottom: 20%;
   font-family: 'Lato', sans-serif;
   font-size: 25px;
@@ -172,4 +172,9 @@ bottom: -50px;
   font-size: 23px;
   color: black;
   text-align: center;
+}
+
+.center{
+  position: absolute;
+  left: 40%;
 }
