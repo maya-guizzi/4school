@@ -214,6 +214,11 @@ bottom: -50px;
 
 }
 
+.lgnamediv{
+  position: absolute;
+  bottom: 41%;
+}
+
 .lgsignupdiv{
   position: absolute;
   bottom: 43%;
@@ -224,6 +229,12 @@ bottom: -50px;
 .lglogindiv{
   position: absolute;
   bottom: 35%;
+  
+
+}
+.lglogindiv2{
+  position: absolute;
+  bottom: 30%;
   
 
 }
