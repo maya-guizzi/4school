@@ -50,14 +50,16 @@
       <div class="container">
         <form action="" method="post">
           <div class="form-group">
-            <label for="comment">Add a comment:</label>
+            <label for="comment">
+              <h2>Add a comment:</h2>
+            </label>
             <textarea class="form-control" rows="5" id="comment" name="content"></textarea>
           </div>
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
       </div>  
     <% }else{  %>
-      <h2>To comment, register </h2> 
+      <h2>To comment you have to register </h2> 
       <a href="/login">Register</a>
     <% }  %> 
 
