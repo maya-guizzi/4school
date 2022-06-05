@@ -28,13 +28,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@800&display=swap" rel="stylesheet">
 </head>
 <!-- navbar -->
-<body class="bck px-3 over">
+<body class="bck px-3 ">
   <div class="row">
+
     <div class="col-3 px-4"> <h1 class="lgtitle">4school</h1></div>
     <div class="col-2 mt-2"><a href="/" class="lgbody homebtn "> Homepage</a></div>
     <div class="col-2 mt-2"><a href="/profile" class="lgbody homebtn1 "> Profile </a></div>
     <div class="col-2 mt-2"><a href="/logout" class="lgbody homebtn2 "> Logout</a></div>
     <div class="col-2 mt-2"><a href="/login" class="lgbody homebtn3 "> Login</a></div>
+
 <hr>
     <div class="row">
       <!-- forum -->
@@ -58,35 +60,32 @@
              </div>
       </div>
       <!-- filters -->
-      <div class="col-3 filterdiv">
-          <div class="row ">
+      <div class="col-3 filterdiv over">
+          <div class="row  ">
+            <!-- title -->
             <h1 class="lgtitle2 mt-3">Filters</h2>
               <hr style="color: white;">
-            <h1 class="lgtitle1">Subjects</h4>
-
-            <div class="col-3 filters">
-              <a href="/subjects/italian" class="btn btn-outline-light px mt-2">italian</a>
-              <a href="/subjects/english" class="btn btn-outline-light px mt-2">english</a>
-              <a href="/subjects/history" class="btn btn-outline-light px mt-2">history</a>
+              <!-- subjects -->
+            <h1 class="lgtitle1 mt-3" style="font-size: 18px ;">Which subject are you looking for?</h4>
+            <div class="col-3 filters ms-2 ">
+              <a href="/subjects/italian" class="btn btn-outline-light px mt-2 mb-2">Italian</a>
+              <a href="/subjects/english" class="btn btn-outline-light px mt-2 mb-2">English</a>
+              <a href="/subjects/history" class="btn btn-outline-light px mt-2 mb-2">History</a>
             </div>
-
-            <div class="col-3 filters">
-              <a href="/subjects/business" class="btn btn-outline-light px mt-2">business</a>
-              <a href="/subjects/science" class="btn btn-outline-light px mt-2">science</a>
-              <a href="/subjects/math" class="btn btn-outline-light px mt-2">math</a>
+            <div class="col-3 filters ms-4">
+              <a href="/subjects/business" class="btn btn-outline-light px mt-2 mb-2">Business</a>
+              <a href="/subjects/science" class="btn btn-outline-light px mt-2 mb-2">Science</a>
+              <a href="/subjects/math" class="btn btn-outline-light px mt-2 mb-2">Maths</a>
             </div>
-
-            <div class="col-3 filters">
-              <a href="/subjects/PHE" class="btn btn-outline-light px  mt-2">PHE</a>
-              <a href="/subjects/computer science" class="btn btn-outline-light px mt-2">cs</a>
-              <a href="/subjects/design" class="btn btn-outline-light px mt-2">design</a>
+            <div class="col-3 filters ms-4">
+              <a href="/subjects/PHE" class="btn btn-outline-light px  mt-2 mb-2">Phe</a>
+              <a href="/subjects/computer science" class="btn btn-outline-light px mt-2 mb-2">CS<s</a>
+              <a href="/subjects/design" class="btn btn-outline-light px mt-2 mb-2">Design</a>
             </div>
           </div>
-          
-          
-
-          <h4>Class</h4>
-        <div class="row">
+          <!-- class -->
+          <h1 class="lgtitle1 mt-4">In which class are you?</h1>
+        <div class="row ms-4 me-4">
           <a href="/classes/MYP1" class="btn btn-outline-light px mt-2">MYP1</a>
           <a href="/classes/MYP2" class="btn btn-outline-light px mt-2">MYP2</a>
           <a href="/classes/MYP3" class="btn btn-outline-light px mt-2">MYP3</a>
@@ -102,6 +101,7 @@
 
       </div>
     </div> 
+    
 <!-- 
 <div >
   <div class="alert alert-danger d-flex align-items-left lgalert" role="alert">
