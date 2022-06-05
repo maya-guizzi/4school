@@ -132,11 +132,7 @@ bottom: -50px;
 
 }
 
-.loginbtn{
-  position: absolute;
-  left: 40%;
-  bottom: 7%;
-}
+
 
 .abc {
   margin-top: 30px;
@@ -192,28 +188,47 @@ bottom: -50px;
 
 .lgusernamediv{
   position: absolute;
-  bottom: 70%;
+  bottom: 62%;
 
 }
 
 .lgpassworddiv{
   position: absolute;
-  bottom: 64%;
+  bottom: 55%;
 
 }
 
 
 .lgsignupdiv{
   position: absolute;
-  bottom: 45%;
-  
+  bottom: 43%;
 
 }
 
 
 .lglogindiv{
   position: absolute;
-  bottom: 55%;
+  bottom: 35%;
   
+
+}
+
+.homebtn {
+  margin-left: 570px;
+  
+}
+
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }
+
+.lgbtn{
 
 }
