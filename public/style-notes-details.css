@@ -8,6 +8,9 @@
     display: block;
     transition: background-position 1s steps(28);
     transition-duration: 0s;
+    position: absolute;
+    left: 70%;
+ 
     
   }
   .heart.is-active {
@@ -24,24 +27,25 @@
  }
 
  h2{
-   margin-left: 125px;
+   margin-left: 120px;
  }
 
  h4{
-   margin-left: 125px;
+   margin-left: 120px;
  }
 
  .comment-content{
-   margin-left: 125px;
+   margin-left: 120px;
  }
 
  .comment-like{
-  margin-left: 125px;
+  margin-left: 120px;
+  margin-bottom: 20px;
  }
 
  .lineround{
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     border-radius: 25px;
     border: 2px solid black;
     padding: 20px; 
@@ -63,9 +67,4 @@
     margin-right: 90px;
  }
 
- .heart{
-   position: absolute;
-   left: 70%;
-
-
- }
+ 
