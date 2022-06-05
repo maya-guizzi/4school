@@ -186,6 +186,15 @@ bottom: -50px;
   text-align: left;
 }
 
+
+.lgbody {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  color:#605e5c ;
+  text-align: left;
+  font-weight: 400;
+}
+
 .lgusernamediv{
   position: absolute;
   bottom: 62%;
@@ -231,5 +240,15 @@ a:active { text-decoration: none; }
 
 .lgbtn{
   color: #201f1e;
-  
+
+}
+
+.lgdivbottom{
+  background-color: #605e5c  ;
+  position: absolute;
+  bottom: 2%;
+  width: 1500px;
+  height: 100px;
+  margin-left: 0;
+  padding: 0;
 }
