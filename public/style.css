@@ -240,8 +240,21 @@ bottom: -50px;
 }
 
 .homebtn {
-  margin-left: 570px;
-  
+  margin-left: 670px;
+  display: inline-block;
+}
+.homebtn1 {
+  margin-left: 550px;
+  display: inline-block;
+}
+.homebtn2 {
+  margin-left: 400px;
+  display: inline-block;
+}
+
+.homebtn3 {
+  margin-left: 250px;
+  display: inline-block;
 }
 
 a:link { text-decoration: none; }
