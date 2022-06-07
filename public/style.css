@@ -299,3 +299,8 @@ a:active { text-decoration: none; }
   position: relative;
   left: 80%;
 }
+
+.create-notes{
+  margin-bottom: 30px;
+  margin-top: 30px;
+}

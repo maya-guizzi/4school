@@ -13,7 +13,12 @@
 
 </head>
 <body>
- 
+   <!-- navbar -->
+   <body class="over">
+    <div class="row">
+      <div class="col-6 px-4"> <h1 class="lgtitle">4school</h1></div>
+      <div class="col-6 mt-2"><a href="/" class="lgbody homebtn0 "> Homepage</a></div>
+
     <div class="lineround">
       <h1><%= note.title %> </h1>
       <h2>Notes Details</h2>
@@ -33,10 +38,10 @@
 
       <% comments.forEach( (comment) => { %>
         <div class ="box sb1">
-          <h2><%= comment.user %>:</h3>
+          <h2>  <a class="heart" href="/likes/<%= comment._id  %>"></a> <%= comment.user %>:</h3>
           <div class="comment-content"><%= comment.content %> </div>
-          <div class="comment-like">
-            Likes: <%= comment.likes %> <a class="heart" href="/likes/<%= comment._id  %>"></a>
+          <div class="comment-like"> 
+            Likes: <%= comment.likes %>
             <% if (user){ %> 
 
             <% } %> 
@@ -63,7 +68,7 @@
       <a href="/login">Register</a>
     <% }  %> 
 
-    <a href="/">Homepage</a>
+
    
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
  <script>

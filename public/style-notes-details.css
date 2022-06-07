@@ -27,19 +27,19 @@
  }
 
  h2{
-   margin-left: 120px;
+   margin-left: 122px;
  }
 
  h4{
-   margin-left: 120px;
+   margin-left: 122px;
  }
 
  .comment-content{
-   margin-left: 120px;
+   margin-left: 122px;
  }
 
  .comment-like{
-  margin-left: 120px;
+  margin-left: 122px;
   margin-bottom: 20px;
  }
 
@@ -68,3 +68,15 @@
  }
 
  
+ .homebtn0 {
+  margin-left: 570px;
+  display: inline-block;
+}
+
+.lgtitle {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 40px;
+  text-align: left;
+  color: #201f1e;
+
+}
