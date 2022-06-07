@@ -40,7 +40,7 @@
 <hr>
     <div class="row">
       <!-- forum -->
-      <div class="col-9">
+      <div class="col-9 " style="overflow: auto;">
          <div class="lgbody" >
             <% if (filter) {%> 
               <h1>Filtered by <%= filter.type %> : <%= filter.value %> </h1>
@@ -60,7 +60,7 @@
              </div>
       </div>
       <!-- filters -->
-      <div class="col-3 filterdiv over">
+      <div class="col-3 filterdiv over " style="overflow: auto ;">
           <div class="row  ">
             <!-- title -->
             <h1 class="lgtitle2 mt-3">Filters</h2>
