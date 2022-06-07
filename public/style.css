@@ -111,9 +111,6 @@ bottom: -30px;
   margin-left: 30px;
 }
 
-.create {
-  text-align: center;
-}
 
 .submit {
   text-align: inherit;
@@ -274,9 +271,6 @@ a:active { text-decoration: none; }
 }
 
 
-
-
-
 .filterdiv{
   position: absolute;
   right: 0%;
@@ -294,13 +288,12 @@ a:active { text-decoration: none; }
   left: 0.5%;
 }
 
-
 .opennotes{
   position: relative;
   left: 80%;
 }
 
-.create-notes{
-  margin-bottom: 30px;
-  margin-top: 30px;
+.createnotes{
+  position: absolute;
+  left: 40%;
 }
