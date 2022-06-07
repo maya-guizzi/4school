@@ -67,7 +67,7 @@ margin-right: 100px;
 .box {
 
 margin: 50px auto;
-background: #605e5c;
+background: #74ABC9;
 padding: 20px;
 font-weight: 900;
 position:relative;
@@ -80,9 +80,9 @@ content: "";
 width: 0px;
 height: 0px;
 position: absolute;
-border-left: 24px solid #605e5c;
+border-left: 24px solid #74ABC9;
 border-right: 12px solid transparent;
-border-top: 12px solid #605e5c;
+border-top: 12px solid #74ABC9;
 border-bottom: 20px solid transparent;
 left: 60px;
 bottom: -30px;

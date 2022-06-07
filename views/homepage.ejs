@@ -40,15 +40,15 @@
 <hr>
     <div class="row">
       <!-- forum -->
-      <div class="col-9 " style="overflow: auto;">
-         <div class="lgbody" >
+      <div class="col-9 " style="margin-right: 90%; ">
+         <div class="lgbody" style="margin-left: 5%;" >
             <% if (filter) {%> 
-              <h1>Filtered by <%= filter.type %> : <%= filter.value %> </h1>
+              <h1 class="lgtitle">Filtered by <%= filter.type %> : <%= filter.value %> </h1>
               <a href="/">Reset</a>
             <% } %> 
             <a class="btn btn-outline-dark" href="/notes/create">create notes</a>
             <% notes.forEach( (note) => { %>
-                <div class ="box sb1">
+                <div class ="box sb1 me-5">
                   <h1 class="lgtitle1" style="text-align:left ;"><%= note.title %> </h3>
                   <img src="<%= note.image %>" alt="">
                   <h4 class="lgbody" style="color: white;"><%- notes.caption %> </h4>
