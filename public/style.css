@@ -377,3 +377,8 @@ margin-bottom: 20px;
   margin-left: 90px;
   margin-right: 90px;
 }
+
+.subbutton{
+  position: absolute;
+  right: 5%;
+}
