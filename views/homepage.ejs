@@ -5,57 +5,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Home page</title>
     <link rel="stylesheet" href="/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- google fonts -->
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap"
+      rel="stylesheet" 
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@800&display=swap" rel="stylesheet">
 </head>
+<!-- navbar -->
+<body class="bck px-3 ">
+  <div class="row">
 
-<body class="bck">
+    <div class="col-3 px-4"> <h1 class="lgtitle">4school</h1></div>
+    <div class="col-2 mt-2"><a href="/" class="lgbody homebtn "> Homepage</a></div>
+    <div class="col-2 mt-2"><a href="/profile" class="lgbody homebtn1 "> Profile </a></div>
+    <div class="col-2 mt-2"><a href="/logout" class="lgbody homebtn2 "> Logout</a></div>
+    <div class="col-2 mt-2"><a href="/login" class="lgbody homebtn3 "> Login</a></div>
 
-    <h1 class="title">4school</h1> 
-
-    <% if(user){ %>
-      <h1>Logged in as <%= user.username%></h1>
-   <% } else{ %>
-      <h1>Not logged in</h1>
-    <% } %>
-    <marquee behavior="" direction=""  class="title" ></marquee>
+<hr>
     <div class="row">
-
-        <div class="col-md-3 text" style="height: 80vh;
-        overflow: auto;">
-          <div class="row">
-            <div class="col">
-              <h2>FILTERS</h2>
-              <h4>Subjects</h4>
+      <!-- forum -->
+      <div class="col-9">
+         <div class="lgbody" >
+            <% if (filter) {%> 
+              <h1>Filtered by <%= filter.type %> : <%= filter.value %> </h1>
+              <a href="/">Reset</a>
+            <% } %> 
+            <a class="btn btn-outline-dark" href="/notes/create">create notes</a>
+            <% notes.forEach( (note) => { %>
+                <div class ="box sb1">
+                  <h1 class="lgtitle1" style="text-align:left ;"><%= note.title %> </h3>
+                  <img src="<%= note.image %>" alt="">
+                  <h4 class="lgbody" style="color: white;"><%- notes.caption %> </h4>
+                  <h4 class="lgbody" style="color: white;"><%- notes.subject %> </h4>
+                  <h4 class="lgbody" style="color: white;"><%- notes.class %> </h4>
+                  <a class="btn btn-outline-light opennotes" href="/notes/<%= note._id %>" style="text-align: center;">Open notes</a>
+                </div>
+              <% }); %>   
+             </div>
+      </div>
+      <!-- filters -->
+      <div class="col-3 filterdiv over">
+          <div class="row  ">
+            <!-- title -->
+            <h1 class="lgtitle2 mt-3">Filters</h2>
+              <hr style="color: white;">
+              <!-- subjects -->
+            <h1 class="lgtitle1 mt-3" style="font-size: 18px ;">Which subject are you looking for?</h4>
+            <div class="col-3 filters ms-2 ">
+              <a href="/subjects/italian" class="btn btn-outline-light px mt-2 mb-2">Italian</a>
+              <a href="/subjects/english" class="btn btn-outline-light px mt-2 mb-2">English</a>
+              <a href="/subjects/history" class="btn btn-outline-light px mt-2 mb-2">History</a>
+            </div>
+            <div class="col-3 filters ms-4">
+              <a href="/subjects/business" class="btn btn-outline-light px mt-2 mb-2">Business</a>
+              <a href="/subjects/science" class="btn btn-outline-light px mt-2 mb-2">Science</a>
+              <a href="/subjects/math" class="btn btn-outline-light px mt-2 mb-2">Maths</a>
+            </div>
+            <div class="col-3 filters ms-4">
+              <a href="/subjects/PHE" class="btn btn-outline-light px  mt-2 mb-2">Phe</a>
+              <a href="/subjects/computer science" class="btn btn-outline-light px mt-2 mb-2">CS<s</a>
+              <a href="/subjects/design" class="btn btn-outline-light px mt-2 mb-2">Design</a>
             </div>
           </div>
-          
-          <div class="row ">
-            <div class="col-3 filters">
-              <a href="/subjects/italian" class="btn btn-outline-light px mt-2">italian</a>
-              <a href="/subjects/english" class="btn btn-outline-light px mt-2">english</a>
-              <a href="/subjects/history" class="btn btn-outline-light px mt-2">history</a>
-            </div>
-
-            <div class="col-3 filters">
-              <a href="/subjects/business" class="btn btn-outline-light px mt-2">business</a>
-              <a href="/subjects/science" class="btn btn-outline-light px mt-2">science</a>
-              <a href="/subjects/math" class="btn btn-outline-light px mt-2">math</a>
-            </div>
-
-            <div class="col-3 filters">
-              <a href="/subjects/PHE" class="btn btn-outline-light px mt-2">PHE</a>
-              <a href="/subjects/computer science" class="btn btn-outline-light px mt-2">cs</a>
-              <a href="/subjects/design" class="btn btn-outline-light px mt-2">design</a>
-            </div>
-          </div>
-          
-          
-
-          <h4>Class</h4>
-        <div class="row">
+          <!-- class -->
+          <h1 class="lgtitle1 mt-4">In which class are you?</h1>
+        <div class="row ms-4 me-4">
           <a href="/classes/MYP1" class="btn btn-outline-light px mt-2">MYP1</a>
           <a href="/classes/MYP2" class="btn btn-outline-light px mt-2">MYP2</a>
           <a href="/classes/MYP3" class="btn btn-outline-light px mt-2">MYP3</a>
@@ -69,45 +99,30 @@
          </div>
         </div>
 
-        <div class="col-md-6 text1 " style="height: 80vh;
-        overflow: auto;">
-        
-        
-            <% if (filter) {%> 
-              <h1>Filtered by <%= filter.type %> : <%= filter.value %> </h1>
-              <a href="/">Reset</a>
-            <% } %> 
-            <a class="btn btn-outline-dark" href="/notes/create">create notes</a>
-            <% notes.forEach( (note) => { %>
-                <div class ="box sb1">
-                  <h2><%= note.title %> </h3>
-                  <img src="<%= note.image %>" alt="">
-                  <h4><%- notes.caption %> </h4>
-                  <h4><%- notes.subject %> </h4>
-                  <h4><%- notes.class %> </h4>
-                  <a class="btn btn-outline-light" href="/notes/<%= note._id %>">open notes</a>
-                </div>
-              <% }); %>
-        </div>
-        <div class="col-md-2 text" style="height: 80vh;
-        overflow: auto;">My Account
-
-        <!-- <div class="col-md-6 text1 ">body</div> -->
-        
-        <div>
-          <a class="btn btn-outline-light" href="/login">login</a>
-        </div>
-
-        <div>
-          <a class="btn btn-outline-light" href="/logout">logout</a>
-        </div>
-
-        <div>
-          <a class="btn btn-outline-light" href="/profile">Your Profile</a>
-        </div>
-
-
-
+      </div>
+      <div class="addnote">
+      <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16" style="color: #201f1e ;">
+        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
+      </svg><i class="bi bi-plus-circle-fill"></i>
+    </div>
+    </div> 
+    
+<!-- 
+<div >
+  <div class="alert alert-danger d-flex align-items-left lgalert" role="alert">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:">
+      <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+   </svg>
+    <div>
+    
+      <% if(user){ %>
+      <h1 class="lgbody">Logged in as <%= user.username%></h1>
+     <% } else{ %>
+      <h1 class="lgbody">Not logged in</h1>
+      <% } %>
+    </div>
+  </div>
+</div> -->
 </body>
 </html>
 

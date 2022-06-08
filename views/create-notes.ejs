@@ -10,21 +10,34 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
     <title>Create notes</title>
+    <!-- google fonts -->
+    <title>Create notes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap"
+      rel="stylesheet" 
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@800&display=swap" rel="stylesheet">
   </head>
-  <body>
 
-    <div class="row">
-      <div class="col-2">
-        <a class="btn btn-light abc" href="/">Homepage</a> 
-      </div>
-      <div class="col-8">
-        <h1 class="title tn" >Add your notes</h1>
-      </div>
+  <body>
+    <!-- navbar -->
+    <body class="over">
+      <div class="row">
+        <div class="col-6 px-4"> <h1 class="lgtitle">4school</h1></div>
+        <div class="col-6 mt-2"><a href="/" class="lgbody homebtn0 "> Homepage</a></div>
+  <hr>
+    
     </div>
     <div class="row">
       <div class="col create">
         <form action="/notes/create" method="POST">
           <div class="px-5">
+
+          <h1 class="create-notes">Create Notes</h1>
           <label for="">Title</label>
           <input type="text" name="title" />
           
@@ -33,6 +46,10 @@
           <!-- <label for="">Upload your notes</label>
           <input type="text" name="image">
            -->
+
+           <label for="">Image</label>
+           <input type="file" name="image">
+
           <label for="">Caption</label>
           <input type="text" name="caption" />
           
@@ -67,7 +84,7 @@
       </div>
       <div class="row">
         <div class="col submit">
-          <button type="submit" class="btn btn-light button arrow text absolute" >Create</button>
+          <button type="submit" class="btn btn-light button arrow text absolute">Create</button>
         </div>
       </div>
     </div>

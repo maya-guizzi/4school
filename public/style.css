@@ -5,50 +5,22 @@
     src: url("fonts/jabore.otf");
   }
 
-.title {
-    font-family: font1;
-    color: black;
-    font-size: 65px;
-    text-align: center;
-    margin-top: 20px;
-}    
-.bck{
-  background-color: #FFFBFC;
-}
 
-.\  text1{
-  font-family: 'Lato', sans-serif;
-  size: 20px;
-  color: black;
-} 
 
-.text{
-  font-family: 'Lato', sans-serif;
-  font-size: 20px;
-  color: #FFFBFC;
-} 
 
-.text-log{
-  font-family: 'Lato', sans-serif;
-  font-size: 40px;
-  color: black;
-}
-
-.col-md-2 {
-   background-color: #74ABC9;
-    }
- .col-md-6 {
+ .col-md-9 {
     background-color: #FFFBFC;
      }
-.col-md-3 {
-  background-color: #74ABC9;
-  margin-left: 25px ;
+  .col-md-3 {
+  background-color: #605e5c;
+
   }
 
 .px {
   margin-left: 10px;
   margin-right: 100px;
 }
+
 @font-face {
   font-family: "font1";
   src: url("fonts/a_big_deal/aBigDeal.ttf");
@@ -95,12 +67,12 @@ margin-right: 100px;
 .box {
 
 margin: 50px auto;
-background:#74ABC9;
+background: #605e5c;
 padding: 20px;
 font-weight: 900;
 position:relative;
-border-radius: 25px;
-padding: 20px;
+border-radius: 40px;
+padding: 24px;
 }
 
 .sb1:before {
@@ -108,12 +80,12 @@ content: "";
 width: 0px;
 height: 0px;
 position: absolute;
-border-left: 20px solid #74ABC9;
-border-right: 20px solid transparent;
-border-top: 30px solid #74ABC9;
-border-bottom: 30px solid transparent;
-left: 50px;
-bottom: -50px;
+border-left: 24px solid #605e5c;
+border-right: 12px solid transparent;
+border-top: 12px solid #605e5c;
+border-bottom: 20px solid transparent;
+left: 60px;
+bottom: -30px;
 
 }
 
@@ -128,25 +100,11 @@ bottom: -50px;
 }
 .div1 {
   width: 400px;
-  height: 450px;
-  background-color:#74ABC9; ;
-  border: #30414A;
-  padding: 50px;
-  margin: 20px;
-  position: absolute;
-  left: 34.5%;
-  bottom: 20%;
-  font-family: 'Lato', sans-serif;
-  font-size: 25px;
-  color: black;
-  box-shadow: 2px 2px 10px 2px black;
+  height: 400px;
+
 }
 
-.loginbtn{
-  position: absolute;
-  left: 40%;
-  bottom: 7%;
-}
+
 
 .abc {
   margin-top: 30px;
@@ -172,4 +130,177 @@ bottom: -50px;
   font-size: 23px;
   color: black;
   text-align: center;
+}
+
+.center{
+  position: absolute;
+  left: 40%;
+}
+
+.lgtitle {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 40px;
+  text-align: left;
+  color: #201f1e;
+
+}
+
+.lgbck {
+  background-color: (142,142,142,0.4);
+  margin-top: 70px;
+  margin-left: 200px;
+
+}
+
+.lgbody {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  color:#605e5c ;
+  text-align: left;
+}
+
+
+.lgbody {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  color:#605e5c ;
+  text-align: left;
+  font-weight: 400;
+}
+
+.lgusernamediv{
+  position: absolute;
+  bottom: 62%;
+
+}
+
+.lgpassworddiv{
+  position: absolute;
+  bottom: 55%;
+
+}
+
+.lgrepassworddiv{
+  position: absolute;
+  bottom: 48%;
+
+}
+
+.lgnamediv{
+  position: absolute;
+  bottom: 41%;
+}
+
+.lgsignupdiv{
+  position: absolute;
+  bottom: 43%;
+
+}
+
+
+.lglogindiv{
+  position: absolute;
+  bottom: 35%;
+  
+
+}
+.lglogindiv2{
+  position: absolute;
+  bottom: 30%;
+  
+
+}
+
+.homebtn0 {
+  margin-left: 570px;
+  display: inline-block;
+}
+.homebtn {
+  margin-left: 670px;
+  display: inline-block;
+}
+.homebtn1 {
+  margin-left: 550px;
+  display: inline-block;
+}
+.homebtn2 {
+  margin-left: 400px;
+  display: inline-block;
+}
+
+.homebtn3 {
+  margin-left: 250px;
+  display: inline-block;
+}
+
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }
+
+.lgbtn{
+  color: #201f1e;
+
+}
+
+.lgdivbottom{
+  background-color: #605e5c ;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  width: 100%;
+  height: 10%;
+  margin-left: 0;
+  padding: 0;
+}
+
+.lgtitle1{
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+.lgtitle2{
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+}
+
+
+
+
+
+.filterdiv{
+  position: absolute;
+  right: 0%;
+  top: 7.1%;
+  width: 10%;
+  height: 95%;
+  background-color: #605e5c ;
+  overflow: hidden;
+}
+
+.addnote{
+  position: fixed;
+  overflow: hidden;
+  bottom: 3%;
+  left: 0.5%;
+}
+
+
+.opennotes{
+  position: relative;
+  left: 80%;
+}
+
+.create-notes{
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
