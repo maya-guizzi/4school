@@ -65,8 +65,9 @@ margin-left: 10px;
 margin-right: 100px;
 }
 .box {
+
 margin: 50px auto;
-background: #74ABC9;
+background: #605e5c;
 padding: 20px;
 font-weight: 900;
 position:relative;
@@ -79,37 +80,15 @@ content: "";
 width: 0px;
 height: 0px;
 position: absolute;
-border-left: 24px solid #74ABC9;
+border-left: 24px solid #605e5c;
 border-right: 12px solid transparent;
-border-top: 12px solid #74ABC9;
+border-top: 12px solid #605e5c;
 border-bottom: 20px solid transparent;
 left: 60px;
 bottom: -30px;
 
 }
-.box5 {
-  margin: 50px auto;
-  background: #605e5c;
-  padding: 20px;
-  font-weight: 900;
-  position:relative;
-  border-radius: 40px;
-  padding: 24px;
-  }
-  
-  .sb15:before {
-  content: "";
-  width: 0px;
-  height: 0px;
-  position: absolute;
-  border-left: 24px solid #605e5c;
-  border-right: 12px solid transparent;
-  border-top: 12px solid #605e5c;
-  border-bottom: 20px solid transparent;
-  left: 60px;
-  bottom: -30px;
-  
-  }
+
 .title2 {
   font-family: font2;
 
@@ -132,6 +111,9 @@ bottom: -30px;
   margin-left: 30px;
 }
 
+.create {
+  text-align: center;
+}
 
 .submit {
   text-align: inherit;
@@ -292,6 +274,9 @@ a:active { text-decoration: none; }
 }
 
 
+
+
+
 .filterdiv{
   position: absolute;
   right: 0%;
@@ -309,76 +294,13 @@ a:active { text-decoration: none; }
   left: 0.5%;
 }
 
+
 .opennotes{
   position: relative;
   left: 80%;
 }
 
-.createnotes{
-  position: absolute;
-  left: 40%;
-}
-
-.createnotes1{
-  position: absolute;
-  left: 47%;
-}
-
-
-.heart {
-  width: 100px;
-  height: 100px;
-  background: url("https://cssanimation.rocks/images/posts/steps/heart.png") no-repeat;
-  background-position: 0 0;
-  cursor: pointer;
-  display: block;
-  transition: background-position 1s steps(28);
-  transition-duration: 0s;
-  position: absolute;
-  left: 91%;
-  bottom: 12%;
-
-  
-}
-.heart.is-active {
-  transition-duration: 1s;
-  background-position: -2800px 0;
-}
-
-
-
-.comment-content{
- margin-left: 100px;
-}
-
-.comment-like{
-margin-left: 122px;
-margin-bottom: 20px;
-}
-
-.lineround{
-  margin-top: 30px;
-  margin-bottom: 40px;
-  border-radius: 25px;
-  border: 2px solid black;
-  padding: 20px; 
-  margin-left: 220px;
-  margin-right: 90px;
-  width: 1000px;
- 
-}
-
-.comment{
-  margin-top: 100px;
+.create-notes{
   margin-bottom: 30px;
-  border-radius: 25px;
-  border: 2px solid black;
-  padding: 20px; 
-  margin-left: 90px;
-  margin-right: 90px;
-}
-
-.subbutton{
-  position: absolute;
-  right: 5%;
+  margin-top: 30px;
 }

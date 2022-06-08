@@ -1,0 +1,82 @@
+
+.heart {
+    width: 100px;
+    height: 100px;
+    background: url("https://cssanimation.rocks/images/posts/steps/heart.png") no-repeat;
+    background-position: 0 0;
+    cursor: pointer;
+    display: block;
+    transition: background-position 1s steps(28);
+    transition-duration: 0s;
+    position: absolute;
+    left: 70%;
+ 
+    
+  }
+  .heart.is-active {
+    transition-duration: 1s;
+    background-position: -2800px 0;
+  }
+  
+  /* body {
+    background: #000000;
+  } */
+  
+ h1{
+   text-align: center;
+ }
+
+ h2{
+   margin-left: 122px;
+ }
+
+ h4{
+   margin-left: 122px;
+ }
+
+ .comment-content{
+   margin-left: 122px;
+ }
+
+ .comment-like{
+  margin-left: 122px;
+  margin-bottom: 20px;
+ }
+
+ .lineround{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    border-radius: 25px;
+    border: 2px solid black;
+    padding: 20px; 
+    margin-left: 220px;
+    margin-right: 90px;
+    width: 1000px;
+
+
+
+ }
+
+ .comment{
+    margin-top: 100px;
+    margin-bottom: 30px;
+    border-radius: 25px;
+    border: 2px solid black;
+    padding: 20px; 
+    margin-left: 90px;
+    margin-right: 90px;
+ }
+
+ 
+ .homebtn0 {
+  margin-left: 570px;
+  display: inline-block;
+}
+
+.lgtitle {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 40px;
+  text-align: left;
+  color: #201f1e;
+
+}
