@@ -8,6 +8,9 @@
     display: block;
     transition: background-position 1s steps(28);
     transition-duration: 0s;
+    position: absolute;
+    left: 70%;
+ 
     
   }
   .heart.is-active {
@@ -24,33 +27,38 @@
  }
 
  h2{
-   margin-left: 20px;
+   margin-left: 122px;
  }
 
  h4{
-   margin-left: 20px;
+   margin-left: 122px;
  }
 
  .comment-content{
-   margin-left: 20px;
+   margin-left: 122px;
  }
 
  .comment-like{
-  margin-left: 20px;
+  margin-left: 122px;
+  margin-bottom: 20px;
  }
 
  .lineround{
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     border-radius: 25px;
     border: 2px solid black;
     padding: 20px; 
-    margin-left: 90px;
+    margin-left: 220px;
     margin-right: 90px;
+    width: 1000px;
+
+
+
  }
 
  .comment{
-    margin-top: 30px;
+    margin-top: 100px;
     margin-bottom: 30px;
     border-radius: 25px;
     border: 2px solid black;
@@ -59,8 +67,16 @@
     margin-right: 90px;
  }
 
- .heart{
-   position: absolute;
-   left: 75%;
+ 
+ .homebtn0 {
+  margin-left: 570px;
+  display: inline-block;
+}
 
- }
+.lgtitle {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 40px;
+  text-align: left;
+  color: #201f1e;
+
+}
