@@ -65,8 +65,9 @@ margin-left: 10px;
 margin-right: 100px;
 }
 .box {
+
 margin: 50px auto;
-background: #74ABC9;
+background: #605e5c;
 padding: 20px;
 font-weight: 900;
 position:relative;
@@ -79,16 +80,21 @@ content: "";
 width: 0px;
 height: 0px;
 position: absolute;
+<<<<<<< HEAD
 border-left: 24px solid #74ABC9;
 <<<<<<< HEAD
 =======
+=======
+border-left: 24px solid #605e5c;
+>>>>>>> parent of 50ef2d8 (9)
 border-right: 12px solid transparent;
-border-top: 12px solid #74ABC9;
+border-top: 12px solid #605e5c;
 border-bottom: 20px solid transparent;
 left: 60px;
 bottom: -30px;
 
 }
+<<<<<<< HEAD
 .box5 {
 margin: 50px auto;
 background: #605e5c;
@@ -139,6 +145,9 @@ bottom: -30px;
   }
 =======
 >>>>>>> 8cbcf42013088e0524ef266cf06d2c5a7b1d2d27
+=======
+
+>>>>>>> parent of 50ef2d8 (9)
 .title2 {
 font-family: font2;
 
@@ -161,6 +170,9 @@ margin-top: 30px;
 margin-left: 30px;
 }
 
+.create {
+  text-align: center;
+}
 
 .submit {
 text-align: inherit;
@@ -321,6 +333,9 @@ color: white;
 }
 
 
+
+
+
 .filterdiv{
 position: absolute;
 right: 0%;
@@ -338,11 +353,13 @@ bottom: 3%;
 left: 0.5%;
 }
 
+
 .opennotes{
 position: relative;
 left: 80%;
 }
 
+<<<<<<< HEAD
 .createnotes{
 <<<<<<< HEAD
   position: absolute;
@@ -475,3 +492,9 @@ right: 5%;
 
 
 >>>>>>> 8cbcf42013088e0524ef266cf06d2c5a7b1d2d27
+=======
+.create-notes{
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+>>>>>>> parent of 50ef2d8 (9)
