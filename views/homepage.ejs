@@ -45,7 +45,7 @@
          <div class="lgbody" >
             <% if (filter) {%> 
               <h1>Filtered by <%= filter.type %> : <%= filter.value %> </h1>
-              <a href="/">Reset</a>
+              <a href="/" style="margin-right: 20px;">Reset</a>
             <% } %> 
             <a class="btn btn-outline-dark" href="/notes/create">create notes</a>
             <% notes.forEach( (note) => { %>
