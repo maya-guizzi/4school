@@ -29,62 +29,64 @@
       <div class="row">
         <div class="col-6 px-4"> <h1 class="lgtitle">4school</h1></div>
         <div class="col-6 mt-2"><a href="/" class="lgbody homebtn0 "> Homepage</a></div>
-  <hr>
-    
+    <hr>
+    <!-- create notes -->
     </div>
     <div class="row">
-      <div class="col create">
         <form action="/notes/create" method="POST">
-          <div class="px-5">
 
-          <h1 class="create-notes">Create Notes</h1>
-          <label for="">Title</label>
-          <input type="text" name="title" />
-          
-          <!-- <label for="">Upload your notes</label>
-          <input type="file" name="image"> -->
-          <!-- <label for="">Upload your notes</label>
-          <input type="text" name="image">
-           -->
-
-           <label for="">Image</label>
-           <input type="file" name="image">
-
-          <label for="">Caption</label>
-          <input type="text" name="caption" />
-          
-          <label for="">Tags</label>
-          
-          <select name="subject" id="">
-            <optgroup label="Subjects">
-              <option value="italian">italian</option>
-              <option value="english">english</option>
-              <option value="history">history</option>
-              <option value="business">business</option>
-              <option value="science">science</option>
-              <option value="math">math</option>
-              <option value="PHE">PHE</option>
-              <option value="computerscience">computer science</option>
-              <option value="design">design</option>
-            </optgroup>
-          </select>
-    
-          <select name="year" id="">
-            <optgroup label="Class">
-              <option value="MYP1">MYP1</option>
-              <option value="MYP2">MYP2</option>
-              <option value="MYP3">MYP3</option>
-              <option value="MYP4">MYP4</option>
-              <option value="MYP5">MYP5</option>
-              <option value="DP1">DP1</option>
-              <option value="DP2">DP2</option>
-    
-            </optgroup>
-          </select>
+          <h1 class="lgtitle mt-3 mb-5" style="text-align: center ; ">Create a post:</h1>
+      <!-- title -->
+      <div class="createnotes" style="top: 20%;">
+        <label for="" class="lgbody ">Title</label>
+        <input type="text" name="title" class="lgbody" />
       </div>
+      <!-- image -->
+      <div class="createnotes" style="top: 27.5% ;" >
+        <label for="" class="lgbody">Image</label>
+        <input type="file" name="image" class="lgbody">
+      </div>
+      <!-- caption -->
+      <div class="createnotes" style="top: 35%;">
+          <label for="" class="lgbody">Caption</label>
+          <input type="text" name="caption" class="lgbody" />
+        </div>   
+
+        <!-- tags -->
+        <div class="createnotes" style="top: 42%;">
+          <label for="" class="lgbody" >Tags</label>
+          
+          <select name="subject" id="" class="lgbody">
+            <optgroup label="Subjects" class="lgbody">
+              <option value="italian" class="lgbody">italian</option>
+              <option value="english" class="lgbody">english</option>
+              <option value="history" class="lgbody">history</option>
+              <option value="business" class="lgbody">business</option>
+              <option value="science" class="lgbody">science</option>
+              <option value="math" class="lgbody">math</option>
+              <option value="PHE" class="lgbody">PHE</option>
+              <option value="computerscience" class="lgbody">computer science</option>
+              <option value="design" class="lgbody">design</option>
+            </optgroup>
+          </select>
+    
+          <select name="year" id="" class="lgbody">
+            <optgroup label="Class" class="lgbody">
+              <option value="MYP1"class="lgbody">MYP1</option>
+              <option value="MYP2"class="lgbody">MYP2</option>
+              <option value="MYP3"class="lgbody">MYP3</option>
+              <option value="MYP4"class="lgbody">MYP4</option>
+              <option value="MYP5"class="lgbody">MYP5</option>
+              <option value="DP1"class="lgbody">DP1</option>
+              <option value="DP2"class="lgbody">DP2</option>
+    
+            </optgroup>
+          </select>
+        </div>
+    
       <div class="row">
         <div class="col submit">
-          <button type="submit" class="btn btn-light button arrow text absolute">Create</button>
+          <button type="submit" class="btn btn-dark btn-lg button arrow text absolute createnotes1" style="top: 51%;">Create</button>
         </div>
       </div>
     </div>
