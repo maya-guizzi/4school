@@ -46,7 +46,7 @@
               <h1>Filtered by <%= filter.type %> : <%= filter.value %> </h1>
               <a href="/">Reset</a>
             <% } %> 
-            <a class="btn btn-outline-dark" href="/notes/create">create notes</a>
+            <a class="btn btn-outline-dark" href="/notes/create" style="margin-top: 30px; ">create notes</a>
             <% notes.forEach( (note) => { %>
                 <div class ="box sb1">
                   <h1 class="lgtitle1" style="text-align:left ;"><%= note.title %> </h3>
@@ -54,7 +54,7 @@
                   <h4 class="lgbody" style="color: white;"><%- notes.caption %> </h4>
                   <h4 class="lgbody" style="color: white;"><%- notes.subject %> </h4>
                   <h4 class="lgbody" style="color: white;"><%- notes.class %> </h4>
-                  <a class="btn btn-outline-light opennotes" href="/notes/<%= note._id %>" style="text-align: center;">Open notes</a>
+                  <a class="btn btn-outline-light opennotes" href="/notes/<%= note._id %>" style="text-align: center; margin-bottom: 10px;">Open notes</a>
                 </div>
               <% }); %>   
              </div>
