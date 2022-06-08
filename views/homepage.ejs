@@ -39,28 +39,48 @@
 
 <hr>
     <div class="row">
+      <div class="col-6filterdiv over" style="height:93vh; overflow: auto;">
       <!-- forum -->
+<<<<<<< HEAD
       <div class="col-9" style="height: 93vh; overflow: auto;">
          <div class="lgbody" >
+=======
+      <div class="col-9 " style="margin-right: 90%; ">
+         <div class="lgbody" style="margin-left: 5%;" >
+>>>>>>> parent of 6d1d182 (Revert "Merge branch 'main' of https://github.com/maya-guizzi/4school")
             <% if (filter) {%> 
-              <h1>Filtered by <%= filter.type %> : <%= filter.value %> </h1>
-              <a href="/">Reset</a>
+              <h1 class="lgtitle">Filtered by <%= filter.type %> : <%= filter.value %> </h1>
+              <a href="/" style="margin-right: 20px;">Reset</a>
             <% } %> 
+<<<<<<< HEAD
             <a class="btn btn-outline-dark" href="/notes/create" style="margin-top: 30px; ">create notes</a>
+=======
+            <a class="btn btn-outline-dark" href="/notes/create"
+            style=" margin-top:30px">create notes</a>
+>>>>>>> parent of 6d1d182 (Revert "Merge branch 'main' of https://github.com/maya-guizzi/4school")
             <% notes.forEach( (note) => { %>
-                <div class ="box sb1">
+                <div class ="box sb1 me-5">
                   <h1 class="lgtitle1" style="text-align:left ;"><%= note.title %> </h3>
                   <img src="<%= note.image %>" alt="">
                   <h4 class="lgbody" style="color: white;"><%- notes.caption %> </h4>
                   <h4 class="lgbody" style="color: white;"><%- notes.subject %> </h4>
                   <h4 class="lgbody" style="color: white;"><%- notes.class %> </h4>
+<<<<<<< HEAD
                   <a class="btn btn-outline-light opennotes" href="/notes/<%= note._id %>" style="text-align: center; margin-bottom: 10px;">Open notes</a>
+=======
+                  <a class="btn btn-outline-light opennotes" href="/notes/<%= note._id %>" style="text-align: center; margin-bottom: 20px;"
+                  >Open notes</a>
+>>>>>>> parent of 6d1d182 (Revert "Merge branch 'main' of https://github.com/maya-guizzi/4school")
                 </div>
               <% }); %>   
              </div>
       </div>
       <!-- filters -->
+<<<<<<< HEAD
       <div class="col-3 filterdiv over" style="overflow: auto; height: 93vh;">
+=======
+      <div class="col-3 filterdiv over " style="overflow: auto ; height: 93vh;">
+>>>>>>> parent of 6d1d182 (Revert "Merge branch 'main' of https://github.com/maya-guizzi/4school")
           <div class="row  ">
             <!-- title -->
             <h1 class="lgtitle2 mt-3">Filters</h2>
@@ -123,6 +143,7 @@
     </div>
   </div>
 </div> -->
+</div>
 </body>
 </html>
 
