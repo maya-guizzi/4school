@@ -39,7 +39,11 @@
     <div class="col-2 mt-2"><a href="/profile" class="lgbody homebtn1 "  style="margin-top: 15px; margin-bottom: 15px;"> Profile </a></div>
 
     <div class="col-2 mt-2"><a href="/logout" class="lgbody homebtn2 "  style="margin-top: 15px; margin-bottom: 15px;"> Logout</a></div>
-    <% } %> 
+    <% }else{%> 
+    <div class="col-2 mt-2"><a href="/login" class="lgbody homebtn1 "  style="margin-top: 15px; margin-bottom: 15px;"> Login</a></div>
+
+    <% }%> 
+
 
 
  
@@ -48,7 +52,7 @@
 <% if (user) {%> 
   <p class="lgbody">Ciao <%= user.username %> </p>
 <% }else { %> 
-  <div class="col-1"><a href="/login" class="btn btn-outline-dark opennotes " style=> Login</a></div>
+  <!-- <div class="col-1"><a href="/login" class="btn btn-outline-dark opennotes " style=> Login</a></div> -->
 <% } %> 
 
     <div class="row">
