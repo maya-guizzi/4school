@@ -32,23 +32,25 @@
 <body class="bck px-3 ">
   <div class="row">
 
-    <div class="col-3 px-4"> <h1 class="lgtitle">4school</h1></div>
-    <div class="col-2 mt-2"><a href="/" class="lgbody homebtn "> Homepage</a></div>
+    <div class="col-3 px-4"> <h1 class="lgtitle" style="margin-top: 15px; margin-bottom: 15px;">4school</h1></div>
+    <div class="col-2 mt-2"><a href="/" class="lgbody homebtn " style="margin-top: 15px; margin-bottom: 15px;"> Homepage</a></div>
 
     <% if (user) {%> 
-    <div class="col-2 mt-2"><a href="/profile" class="lgbody homebtn1 "> Profile </a></div>
+    <div class="col-2 mt-2"><a href="/profile" class="lgbody homebtn1 "  style="margin-top: 15px; margin-bottom: 15px;"> Profile </a></div>
 
-    <div class="col-2 mt-2"><a href="/logout" class="lgbody homebtn2 "> Logout</a></div>
+    <div class="col-2 mt-2"><a href="/logout" class="lgbody homebtn2 "  style="margin-top: 15px; margin-bottom: 15px;"> Logout</a></div>
     <% } %> 
 
 
-    <% if (user) {%> 
-      <p>Ciao <%= user.email %> </p>
-    <% }else { %> 
-      <div class="col-2 mt-2"><a href="/login" class="lgbody homebtn3 "> Login</a></div>
-    <% } %> 
+ 
 
 <hr>
+<% if (user) {%> 
+  <p class="lgbody">Ciao <%= user.username %> </p>
+<% }else { %> 
+  <div class="col-1"><a href="/login" class="btn btn-outline-dark opennotes " style=> Login</a></div>
+<% } %> 
+
     <div class="row">
       <!-- forum -->
       <div class="col-9" style="height: 93vh; overflow: auto;">
