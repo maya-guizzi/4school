@@ -382,3 +382,8 @@ margin-right: 90px;
 position: absolute;
 right: 5%;
 }
+
+.imgpos{
+  position: absolute;
+  right: 10%;
+}
